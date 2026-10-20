@@ -1,0 +1,2795 @@
+<!DOCTYPE html>
+<!--
+  HDT quản lý trạm 0983666086 - Cột / Tủ & Công tơ khách hàng (EVN)
+-->
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <title>HDT quản lý trạm 0983666086</title>
+  <meta name="theme-color" content="#0066B3" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="HDT quản lý trạm" />
+  <meta name="description" content="HDT quản lý trạm 0983666086 - Cột điện, tủ điện và công tơ khách hàng (EVN)." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOTlENCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNjZCMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPgogIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE1IiBmaWxsPSJ1cmwoI2cpIi8+CiAgPHRleHQgeD0iMTYiIHk9IjIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI4MDAiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9IiNmZmYiPkVWTjwvdGV4dD4KPC9zdmc+" />
+
+  <script>
+    window.__xlsxReady = false;
+    window.__xlsxCallbacks = [];
+    function onXlsxReady(cb) {
+      if (window.__xlsxReady && typeof XLSX !== 'undefined') { try { cb(); } catch(e) {} return; }
+      window.__xlsxCallbacks.push(cb);
+    }
+    function markXlsxReady() {
+      if (typeof XLSX === 'undefined') return false;
+      window.__xlsxReady = true;
+      var cbs = window.__xlsxCallbacks.splice(0);
+      cbs.forEach(function(cb) { try { cb(); } catch(e) {} });
+      return true;
+    }
+    function loadXlsxScript(src, isFallback) {
+      var s = document.createElement('script');
+      s.src = src;
+      s.async = true;
+      s.onload = function() {
+        if (markXlsxReady()) {
+          var el = document.getElementById('importStatus');
+          if (el && (!el.textContent || el.textContent.indexOf('⏳') === 0 || el.textContent.indexOf('⚠️') === 0)) {
+            el.textContent = '✅ Sẵn sàng · Excel + CSV';
+            el.style.color = '#059669';
+            el.style.fontWeight = '600';
+          }
+        } else if (!isFallback) {
+          loadXlsxScript('https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js', 'unpkg');
+        } else if (isFallback === 'unpkg') {
+          loadXlsxScript('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js', 'jsdelivr');
+        }
+      };
+      s.onerror = function() {
+        if (!isFallback) loadXlsxScript('https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js', 'unpkg');
+        else if (isFallback === 'unpkg') loadXlsxScript('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js', 'jsdelivr');
+        else {
+          var el = document.getElementById('importStatus');
+          if (el) {
+            el.textContent = '⚠️ Không tải được thư viện Excel. Có thể dùng CSV.';
+            el.style.color = '#dc2626';
+            el.style.fontWeight = '600';
+          }
+        }
+      };
+      document.head.appendChild(s);
+    }
+    loadXlsxScript('https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js', false);
+
+    // Tesseract.js OCR (đọc số NO trên ảnh cột)
+    window.__tesseractReady = false;
+    window.__tesseractCallbacks = [];
+    function onTesseractReady(cb) {
+      if (window.__tesseractReady && typeof Tesseract !== 'undefined') { try { cb(); } catch(e) {} return; }
+      window.__tesseractCallbacks.push(cb);
+    }
+    function markTesseractReady() {
+      if (typeof Tesseract === 'undefined') return false;
+      window.__tesseractReady = true;
+      var cbs = window.__tesseractCallbacks.splice(0);
+      cbs.forEach(function(cb) { try { cb(); } catch(e) {} });
+      return true;
+    }
+    (function loadTesseract() {
+      var s = document.createElement('script');
+      s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+      s.async = true;
+      s.onload = function() { markTesseractReady(); };
+      s.onerror = function() {
+        var s2 = document.createElement('script');
+        s2.src = 'https://unpkg.com/tesseract.js@5/dist/tesseract.min.js';
+        s2.async = true;
+        s2.onload = function() { markTesseractReady(); };
+        document.head.appendChild(s2);
+      };
+      document.head.appendChild(s);
+    })();
+  </script>
+  <style>
+    :root {
+      --primary: #003D7A;
+      --primary-light: #0066B3;
+      --primary-bright: #0088CC;
+      --accent: #38bdf8;
+      --accent-soft: #e0f2fe;
+      --success: #059669;
+      --success-bg: #d1fae5;
+      --warning: #d97706;
+      --warning-bg: #fef3c7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --surface: #ffffff;
+      --bg: #f0f4f8;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 1px 3px rgba(15,23,42,.06), 0 4px 12px rgba(15,23,42,.04);
+      --radius: 14px;
+      --teal: #0d9488;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px));
+      min-height: 100vh; overscroll-behavior-y: contain; -webkit-overflow-scrolling: touch; }
+    .header {
+      background: linear-gradient(135deg, #003D7A 0%, #0066B3 50%, #0d9488 100%);
+      color: #fff; padding: 12px 16px; padding-top: calc(12px + env(safe-area-inset-top, 0px));
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 20px rgba(30,58,95,.35);
+    }
+    .header-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
+    .logo-svg { width: 36px; height: 36px; flex-shrink: 0; }
+    .header-title { font-size: 16px; font-weight: 800; letter-spacing: 0.3px; line-height: 1.2; }
+    .header-sub { font-size: 11px; opacity: 0.85; font-weight: 500; }
+    .header-help {
+      width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.55);
+      background: rgba(255,255,255,.12); color: #fff; font-size: 14px; font-weight: 700;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+    }
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(15,23,42,.55); z-index: 1000;
+      align-items: center; justify-content: center; padding: 16px; backdrop-filter: blur(4px);
+    }
+    .modal-overlay.show { display: flex; }
+    .modal-content {
+      background: var(--surface); border-radius: 18px; max-width: 520px; width: 100%; max-height: 85vh;
+      overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 20px 50px rgba(15,23,42,.3);
+    }
+    .modal-header {
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      background: linear-gradient(180deg, #f8fafc, #fff);
+    }
+    .modal-header h2 { font-size: 17px; margin: 0; color: var(--primary); }
+    .modal-close {
+      width: 32px; height: 32px; border: none; background: #f1f5f9; border-radius: 50%;
+      font-size: 20px; cursor: pointer; color: var(--text-muted);
+    }
+    .modal-body { padding: 16px 18px; overflow-y: auto; font-size: 14px; line-height: 1.55; }
+    .modal-body h3 { font-size: 14px; margin: 14px 0 6px; color: var(--primary-bright); font-weight: 700; }
+    .modal-body h3:first-child { margin-top: 0; }
+    .modal-body ul { padding-left: 18px; margin-bottom: 8px; }
+    .modal-body li { margin-bottom: 4px; }
+    .modal-body .tip {
+      background: var(--accent-soft); border-left: 3px solid var(--primary-bright);
+      border-radius: 0 10px 10px 0; padding: 10px 12px; margin: 12px 0; font-size: 13px; color: #1e3a5f;
+    }
+    .toast-msg {
+      position: fixed; bottom: calc(28px + env(safe-area-inset-bottom, 0px)); left: 50%;
+      transform: translateX(-50%) translateY(80px); background: rgba(15,23,42,.92); color: #fff;
+      padding: 12px 22px; border-radius: 28px; font-size: 14px; font-weight: 550; z-index: 2000;
+      opacity: 0; transition: all .3s ease; pointer-events: none; max-width: 90%; text-align: center;
+    }
+    .toast-msg.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    .toast-msg.ok { background: rgba(5,150,105,0.95); }
+    .toast-msg.err { background: rgba(220,38,38,0.95); }
+    .card {
+      background: var(--surface); margin: 0 12px 12px; border-radius: var(--radius); padding: 16px;
+      box-shadow: var(--shadow); border: 1px solid rgba(226,232,240,.8);
+    }
+    .card.hidden { display: none; }
+    .sec-title {
+      font-size: 16px !important; font-weight: 800 !important; color: #003D7A !important;
+      margin-bottom: 10px !important;
+    }
+    .sec-title.teal { color: #0f766e !important; }
+    .field-label {
+      font-size: 13px !important; font-weight: 700 !important; color: #1e293b !important;
+      display: block; margin-bottom: 4px;
+    }
+    .field-input {
+      width: 100%; padding: 12px !important; border: 2px solid #94a3b8 !important;
+      border-radius: 10px !important; font-size: 16px !important; font-weight: 600 !important;
+      color: #0f172a !important; background: #fff !important; outline: none;
+    }
+    .field-input:focus { border-color: #0066B3 !important; box-shadow: 0 0 0 3px rgba(0,102,179,.18); }
+    .kh-card {
+      background: #fff; border: 2px solid #5eead4; border-radius: 12px;
+      padding: 12px 14px; margin-bottom: 10px;
+    }
+    .kh-name { font-size: 17px !important; font-weight: 800 !important; color: #0f172a !important; margin-bottom: 6px; }
+    .kh-meta { font-size: 14px !important; font-weight: 600 !important; color: #1e293b !important; margin-bottom: 4px; line-height: 1.45; }
+    .kh-no { font-size: 15px !important; font-weight: 800 !important; color: #0f766e !important; }
+    .kh-call, .kh-sms {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 6px;
+      padding: 10px 14px; color: #fff !important; border-radius: 10px;
+      font-weight: 800; font-size: 15px !important; text-decoration: none;
+    }
+    .kh-call { background: #047857; }
+    .kh-sms { background: #2563eb; margin-left: 6px; }
+    .kh-contact-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; align-items: center; }
+    .import-row { display: flex; gap: 8px; margin: 0 12px 6px; flex-wrap: wrap; }
+    .btn-import, .btn-export, .btn-clear-list, .btn-save-backup {
+      flex: 1; min-width: 100px; padding: 12px 14px; border: none; border-radius: 11px;
+      font-size: 14px; font-weight: 650; cursor: pointer; color: #fff; min-height: 46px;
+    }
+    .btn-import { background: linear-gradient(135deg, #64748b, #94a3b8); }
+    .btn-export { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+    .btn-clear-list { background: linear-gradient(135deg, #dc2626, #ef4444); }
+    .btn-save-backup { background: linear-gradient(135deg, #0d9488, #14b8a6); flex: 1.2; }
+    .stats { text-align: center; font-size: 12px; color: var(--text-muted); margin: 4px 12px 8px; }
+    .stats strong { color: var(--text); font-weight: 700; }
+    .search-box { position: relative; margin: 0 12px 8px; }
+    .search-box input {
+      width: 100%; padding: 12px 36px 12px 40px; border: 1.5px solid transparent;
+      border-radius: 12px; background: var(--surface); font-size: 16px !important;
+      box-shadow: var(--shadow); outline: none; min-height: 48px;
+    }
+    .search-box input:focus { border-color: var(--primary-bright); box-shadow: 0 0 0 3px rgba(37,99,235,.15), var(--shadow); }
+    .search-box .search-icon { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); opacity: 0.45; }
+    .search-box .clear-search {
+      position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+      width: 24px; height: 24px; border: none; background: #e2e8f0; border-radius: 50%;
+      font-size: 14px; cursor: pointer; color: var(--text-muted);
+    }
+    .filter-bar { display: flex; gap: 6px; margin: 0 12px 12px; overflow-x: auto; padding-bottom: 2px; }
+    .filter-btn {
+      flex-shrink: 0; padding: 8px 13px; border: 1.5px solid var(--border); border-radius: 22px;
+      background: var(--surface); font-size: 13px; font-weight: 650; cursor: pointer;
+      color: var(--text-muted); white-space: nowrap; min-height: 44px;
+    }
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+      border-color: transparent; color: #fff;
+    }
+    .filter-btn.active.du { background: linear-gradient(135deg, #059669, #10b981); }
+    .filter-btn.active.chua { background: linear-gradient(135deg, #ea580c, #f97316); }
+    .view-toggle { display: flex; gap: 6px; margin: 0 12px 10px; }
+    .view-btn {
+      flex: 1; padding: 10px 12px; border: 1.5px solid var(--border); border-radius: 11px;
+      background: var(--surface); font-size: 14px; font-weight: 650; cursor: pointer;
+      color: var(--text-muted); min-height: 44px;
+    }
+    .view-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+      border-color: transparent; color: #fff;
+    }
+    .table-wrap {
+      display: none; margin: 0 8px 16px; overflow-x: auto; -webkit-overflow-scrolling: touch;
+      border-radius: 12px; border: 1px solid var(--border); background: #fff;
+      box-shadow: var(--shadow); max-height: calc(100vh - 220px); overflow-y: auto;
+    }
+    .table-wrap.show { display: block; }
+    #itemList.hide-cards { display: none; }
+    table.excel-table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 13px; }
+    table.excel-table thead th {
+      position: sticky; top: 0; z-index: 5;
+      background: linear-gradient(180deg, #003D7A, #0066B3); color: #fff;
+      font-weight: 700; font-size: 11px; padding: 10px 8px; white-space: nowrap;
+      border-right: 1px solid rgba(255,255,255,.15); text-align: center;
+    }
+    table.excel-table tbody td {
+      border: 1px solid #e2e8f0; padding: 6px 4px; vertical-align: middle; background: #fff;
+    }
+    table.excel-table tbody tr:nth-child(even) td { background: #f8fafc; }
+    table.excel-table tbody tr:hover td { background: #e0f2fe; }
+    table.excel-table tbody tr.row-hidden { display: none; }
+    table.excel-table input[type="text"],
+    table.excel-table input[type="tel"],
+    table.excel-table select {
+      width: 100%; min-width: 56px; padding: 7px 6px; border: 1px solid transparent;
+      border-radius: 6px; background: transparent; font-size: 13px !important; outline: none;
+    }
+    table.excel-table input:focus, table.excel-table select:focus {
+      border-color: var(--primary-bright); background: #fff; box-shadow: 0 0 0 2px rgba(37,99,235,.15);
+    }
+    .col-stt { width: 40px; text-align: center; font-weight: 700; color: var(--text-muted); }
+    .col-name { min-width: 110px; }
+    .col-socot { min-width: 90px; }
+    .col-malo { min-width: 70px; }
+    .col-addr { min-width: 130px; }
+    .col-status { min-width: 110px; }
+    .col-congto { min-width: 160px; max-width: 200px; vertical-align: top !important; }
+    .col-note { min-width: 120px; }
+    .col-anh { min-width: 140px; vertical-align: top !important; }
+    .col-act { min-width: 60px; text-align: center; }
+    .status-select { font-weight: 650; border-radius: 8px !important; padding: 6px 4px !important; }
+    .status-select.st-du { background: #d1fae5; color: #047857; }
+    .status-select.st-chua { background: #ffedd5; color: #c2410c; }
+    .status-select.st-xl { background: #e0f2fe; color: #1e40af; }
+    .btn-row-del {
+      padding: 6px 10px; border: none; border-radius: 8px;
+      background: #fee2e2; color: #b91c1c; font-weight: 700; font-size: 12px; cursor: pointer;
+    }
+    .addr-map-btns { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+    .btn-map-sm, .btn-gps-sm, .btn-dir-sm {
+      flex: 1; min-width: 52px; padding: 5px 4px; border: none; border-radius: 6px;
+      font-size: 11px; font-weight: 700; cursor: pointer; color: #fff; min-height: 28px;
+    }
+    .btn-map-sm { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+    .btn-gps-sm { background: linear-gradient(135deg, #0d9488, #14b8a6); }
+    .btn-dir-sm { background: linear-gradient(135deg, #ea580c, #f97316); }
+    .geo-info { font-size: 10px; color: #047857; font-weight: 600; margin-top: 3px; word-break: break-all; }
+    .geo-info.empty { color: #94a3b8; font-weight: 500; }
+    .congto-summary { font-size: 12px; font-weight: 700; color: #0369a1; margin-bottom: 6px; }
+    .congto-summary.empty { color: #94a3b8; font-weight: 500; }
+    .btn-congto {
+      width: 100%; padding: 8px 6px; border: none; border-radius: 8px;
+      background: linear-gradient(135deg, #0d9488, #14b8a6); color: #fff;
+      font-size: 12px; font-weight: 700; cursor: pointer; min-height: 36px;
+    }
+    .congto-card {
+      background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 10px;
+      padding: 10px 12px; margin-bottom: 8px;
+    }
+    .congto-card .ct-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 6px; }
+    .congto-card .ct-row.full { grid-template-columns: 1fr; }
+    .congto-card label {
+      font-size: 13px; font-weight: 700; color: #1e293b; display: block; margin-bottom: 4px;
+    }
+    .congto-card input {
+      width: 100%; padding: 12px 12px; border: 2px solid #94a3b8; border-radius: 10px;
+      font-size: 16px !important; font-weight: 600; color: #0f172a; outline: none; background: #fff;
+    }
+    .congto-card input:focus { border-color: #0d9488; box-shadow: 0 0 0 3px rgba(13,148,136,.15); }
+    .btn-call, .btn-sms {
+      display: flex; align-items: center; justify-content: center; text-decoration: none;
+      flex: 1; padding: 8px; border-radius: 8px; min-height: 36px;
+      color: #fff; font-weight: 700; font-size: 12px;
+    }
+    .btn-call { background: linear-gradient(135deg, #059669, #10b981); }
+    .btn-sms { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+    .btn-contact-row { display: flex; gap: 6px; width: 100%; }
+    .btn-del-ct {
+      padding: 8px 10px; border: none; border-radius: 8px;
+      background: linear-gradient(135deg, #dc2626, #ef4444); color: #fff;
+      font-size: 12px; font-weight: 700; cursor: pointer;
+    }
+    .btn-add-ct {
+      width: 100%; padding: 12px; border: 2px dashed #14b8a6; border-radius: 10px;
+      background: #f0fdfa; color: #0f766e; font-size: 14px; font-weight: 700;
+      cursor: pointer; margin-top: 8px; min-height: 44px;
+    }
+    .congto-list-card {
+      margin: 10px 0; padding: 10px; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: 10px;
+    }
+    .congto-list-card h4 { font-size: 13px; color: #0f766e; margin-bottom: 8px; font-weight: 700; }
+    .ct-mini {
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+      padding: 8px 10px; margin-bottom: 6px; font-size: 13px;
+    }
+    .ct-mini .ct-name { font-weight: 700; color: #0f172a; }
+    .ct-mini .ct-meta { color: #64748b; font-size: 12px; margin-top: 2px; }
+    .ct-mini .ct-phone, .ct-mini .ct-sms {
+      display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;
+      padding: 4px 10px; border-radius: 6px;
+      font-weight: 700; font-size: 12px; text-decoration: none;
+    }
+    .ct-mini .ct-phone { background: #d1fae5; color: #047857; }
+    .ct-mini .ct-sms { background: #dbeafe; color: #1d4ed8; margin-left: 4px; }
+    .loc-name { font-size: 15px; font-weight: 700; }
+    .loc-code { font-size: 13px; color: var(--primary-bright); font-weight: 600; margin-top: 2px; }
+    .address { font-size: 13px; color: var(--text-muted); margin-top: 3px; }
+    .note-box { margin: 8px 0; }
+    .note-box textarea {
+      width: 100%; min-height: 80px; padding: 12px 14px; border: 2px solid #94a3b8;
+      border-radius: 10px; font-size: 16px !important; font-weight: 600; color: #0f172a;
+      resize: vertical; outline: none; background: #fff; line-height: 1.45;
+    }
+    .note-box textarea:focus { border-color: #0066B3; background: #fff; box-shadow: 0 0 0 3px rgba(0,102,179,.15); }
+    .btn-save {
+      padding: 8px 14px; background: linear-gradient(135deg, var(--primary), var(--primary-bright));
+      color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 650; cursor: pointer;
+    }
+    .btn-row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
+    .btn {
+      flex: 1; min-width: 70px; padding: 10px 8px; border: none; border-radius: 10px;
+      font-size: 13px; font-weight: 650; cursor: pointer; color: #fff; min-height: 46px;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .btn.purple { background: linear-gradient(135deg, #7c3aed, #8b5cf6); }
+    .btn.indigo { background: linear-gradient(135deg, #4338ca, #6366f1); }
+    .btn.red { background: linear-gradient(135deg, #dc2626, #f87171); }
+    .btn.gray { background: linear-gradient(135deg, #64748b, #94a3b8); }
+    .preview-area { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+    .preview-item {
+      position: relative; width: 72px; height: 72px; border-radius: 10px;
+      overflow: hidden; background: #f1f5f9; border: 1px solid var(--border);
+    }
+    .preview-item img { width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
+    .btn-xoa-file {
+      position: absolute; top: 3px; right: 3px; width: 20px; height: 20px;
+      border-radius: 50%; border: none; background: rgba(15,23,42,.7);
+      color: #fff; font-size: 13px; cursor: pointer;
+    }
+    .tbl-anh-wrap { display: flex; flex-wrap: wrap; gap: 4px; }
+    .tbl-anh-thumb {
+      position: relative; width: 48px; height: 48px; border-radius: 8px; overflow: hidden;
+      border: 1px solid #e2e8f0; background: #f1f5f9;
+    }
+    .tbl-anh-thumb img { width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
+    .tbl-anh-thumb .tbl-xoa {
+      position: absolute; top: 0; right: 0; width: 18px; height: 18px; border: none;
+      border-radius: 0 0 0 8px; background: rgba(220,38,38,.85); color: #fff; font-size: 12px; cursor: pointer;
+    }
+    .tbl-anh-empty {
+      width: 100%; padding: 8px 6px; margin-bottom: 4px; background: #f0f9ff;
+      border: 1.5px dashed #38bdf8; border-radius: 8px; font-size: 11px; color: #0369a1;
+      text-align: center; font-weight: 600;
+    }
+    .tbl-anh-btns { display: flex; flex-direction: column; gap: 4px; margin-top: 4px; width: 100%; }
+    .tbl-anh-btns button {
+      width: 100%; padding: 8px 6px; border: none; border-radius: 8px; font-size: 12px;
+      font-weight: 700; cursor: pointer; color: #fff; min-height: 36px;
+    }
+    .tbl-anh-btns .btn-gal { background: linear-gradient(135deg,#0068ff,#0052cc); }
+    .tbl-anh-btns .btn-cam { background: linear-gradient(135deg,#7c3aed,#8b5cf6); }
+    .tbl-anh-count { font-size: 11px; color: #047857; font-weight: 700; width: 100%; margin-bottom: 2px; }
+    .copy-noti {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      margin: 14px 12px 8px; padding: 13px 16px;
+      background: linear-gradient(135deg, #0068ff, #0052cc);
+      color: #fff; border: none; border-radius: 12px; font-size: 15px; font-weight: 650;
+      cursor: pointer; width: calc(100% - 24px); box-shadow: 0 4px 14px rgba(0,104,255,.35);
+    }
+    .app-footer { text-align: center; padding: 20px 12px 8px; font-size: 11px; color: var(--text-muted); opacity: 0.85; }
+    .app-footer strong { color: var(--primary-bright); }
+    .img-lightbox {
+      display: none; position: fixed; inset: 0; z-index: 3000; background: rgba(0,0,0,.94);
+      flex-direction: column; align-items: stretch; justify-content: center;
+    }
+    .img-lightbox.show { display: flex; }
+    .img-lightbox-toolbar {
+      flex-shrink: 0; display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 12px; padding-top: calc(10px + env(safe-area-inset-top, 0px));
+      background: rgba(0,0,0,.55); color: #fff; gap: 8px;
+    }
+    .img-lightbox-toolbar button {
+      border: none; background: rgba(255,255,255,.15); color: #fff; border-radius: 8px;
+      padding: 8px 12px; font-size: 14px; font-weight: 650; cursor: pointer; min-height: 40px;
+    }
+    .img-lightbox-stage { flex: 1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .img-lightbox-stage img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    input, textarea, select { font-size: 16px !important; }
+    .table-hint { margin: 0 12px 8px; font-size: 12px; color: var(--text-muted); text-align: center; line-height: 1.4; }
+    /* Ẩn input file an toàn trên iOS — display:none hay làm label không mở được camera */
+    .file-hidden {
+      position: absolute !important;
+      width: 1px !important; height: 1px !important;
+      padding: 0 !important; margin: -1px !important;
+      overflow: hidden !important; clip: rect(0,0,0,0) !important;
+      border: 0 !important; opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    label[for] { -webkit-tap-highlight-color: transparent; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-left">
+      <svg class="logo-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="evnG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00A651"/>
+            <stop offset="55%" stop-color="#008C45"/>
+            <stop offset="100%" stop-color="#0066B3"/>
+          </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="22" fill="url(#evnG)"/>
+        <circle cx="24" cy="24" r="18" fill="#003D7A"/>
+        <text x="24" y="29" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="13" fill="#FFFFFF">EVN</text>
+      </svg>
+      <div>
+        <div class="header-title">HDT quản lý trạm 0983666086</div>
+        <div class="header-sub">Cột / Tủ · Công tơ KH · EVN</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <button class="header-help" onclick="moHuongDan()" title="Hướng dẫn">?</button>
+    </div>
+  </div>
+
+  <!-- Modal Hướng dẫn -->
+  <div class="modal-overlay" id="modalHuongDan" onclick="if(event.target===this)dongHuongDan()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>📖 Hướng dẫn</h2>
+        <button class="modal-close" onclick="dongHuongDan()">×</button>
+      </div>
+      <div class="modal-body">
+        <h3>1. Nạp danh sách công tơ toàn trạm</h3>
+        <ul>
+          <li>Bấm <b>📂 Chọn Excel danh sách CT</b> — file có cột: NO / Số công tơ, Tên KH, Mã KH, SĐT, Địa chỉ.</li>
+          <li>Chỉ cần chọn <b>1 lần</b> mỗi trạm. App lưu trên máy.</li>
+        </ul>
+        <h3>2. Thêm cột bằng ảnh + OCR</h3>
+        <ul>
+          <li>Trên ảnh, ghi rõ <b>4–5 số cuối NO công tơ</b> (vd: <b>3167-1694-4066</b>). Không cần chữ “Remark”.</li>
+          <li>Chụp / chọn ảnh → app đọc số → điền Ghi chú + gắn khách từ Excel.</li>
+          <li>Bấm lại <b>🔍 Đọc số NO trên ảnh</b> nếu cần.</li>
+        </ul>
+        <h3>3. Công tơ khách hàng</h3>
+        <ul>
+          <li>Mỗi cột có thể gắn nhiều công tơ (OCR hoặc thêm tay / dán Excel).</li>
+          <li>Mỗi CT: Số CT/NO · Mã KH · Tên KH · SĐT · Địa chỉ KH.</li>
+          <li>Bấm <b>📞 Gọi</b> để gọi khách hàng.</li>
+        </ul>
+        <h3>4. Ảnh · GPS · Maps · Trạng thái · Lưu tệp</h3>
+        <ul>
+          <li>GPS lấy tọa độ · Maps / Chỉ đường mở Google Maps.</li>
+          <li>Chọn <b>Trạng thái</b> từng cột: Chưa XL / Đã HT / Chưa HT — lọc nhanh bằng thanh phía trên.</li>
+          <li>Làm xong bấm <b>Lưu tệp</b>. File .json gồm: cột, ảnh, công tơ, ghi chú <b>và danh sách Excel CT</b>.</li>
+          <li>Lần sau: <b>Mở trạm đã lưu</b> → đủ dữ liệu + danh sách CT để OCR tiếp.</li>
+        </ul>
+        <div class="tip">OCR đọc số viết tay tốt hơn khi số to, rõ, nền tương phản. Nếu không khớp, kiểm tra lại 4–5 số cuối trên ảnh.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Công tơ -->
+  <div class="modal-overlay" id="modalCongTo" onclick="if(event.target===this)dongCongToModal()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="congToModalTitle">⚡ Công tơ điện</h2>
+        <button class="modal-close" onclick="dongCongToModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div style="font-size:13px;font-weight:600;color:#334155;margin-bottom:10px;line-height:1.4;">Dán một lúc nhiều khách từ Excel, hoặc thêm từng dòng.</div>
+        <div style="background:#ecfdf5;border:2px solid #14b8a6;border-radius:12px;padding:12px;margin-bottom:12px;">
+          <div style="font-size:14px;font-weight:800;color:#0f766e;margin-bottom:6px;">📋 Dán Excel (nhiều khách một lúc)</div>
+          <div style="font-size:12px;font-weight:600;color:#475569;margin-bottom:6px;line-height:1.4;">Copy trên Excel → dán vào đây. Mỗi dòng 1 khách.<br>Gợi ý: <b>Tên KH · Mã KH · Địa chỉ · SĐT · NO</b> (cách Tab)<br>Dùng cho: <b>công tơ cấp mới</b> hoặc <b>di chuyển công tơ</b>.</div>
+          <textarea id="pasteExcelModal" placeholder="Dán vào đây… Công tơ cấp mới / Di chuyển công tơ" style="width:100%;min-height:100px;padding:12px;border:2px solid #14b8a6;border-radius:10px;font-size:14px;font-weight:600;color:#0f172a;background:#fff;resize:vertical;"></textarea>
+          <button type="button" onclick="danExcelTrongModal()" style="width:100%;margin-top:8px;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#0d9488,#14b8a6);color:#fff;font-size:15px;font-weight:800;min-height:46px;cursor:pointer;">✅ Dán & cập nhật ngay</button>
+        </div>
+        <div id="congToListBox"></div>
+        <button type="button" class="btn-add-ct" onclick="themCongToMoi()">➕ Thêm từng công tơ</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-lightbox" id="imgLightbox" onclick="if(event.target===this||event.target.id==='imgLightboxImg')dongLightbox()">
+    <div class="img-lightbox-toolbar">
+      <span>Xem ảnh</span>
+      <button type="button" onclick="event.stopPropagation();dongLightbox()">✕ Đóng</button>
+    </div>
+    <div class="img-lightbox-stage"><img id="imgLightboxImg" alt="" /></div>
+  </div>
+  <div id="toastMsg" class="toast-msg"></div>
+
+  <button type="button" class="copy-noti" onclick="toggleZaloPanel()">💬 Gửi Zalo</button>
+  <div id="zaloPanel" style="display:none;margin:0 12px 10px;background:#fff;border-radius:12px;padding:14px;box-shadow:0 1px 4px rgba(0,0,0,.08);border:1px solid #e2e8f0;">
+    <div style="font-size:14px;font-weight:700;color:#003D7A;margin-bottom:10px;">💬 Gửi Zalo</div>
+    <button type="button" onclick="chiaSeExcelZalo()" style="width:100%;padding:13px;margin-bottom:8px;background:linear-gradient(135deg,#059669,#10b981);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:15px;cursor:pointer;">📊 Gửi file Excel</button>
+    <button type="button" onclick="chiaSeTextZalo()" style="width:100%;padding:12px;margin-bottom:8px;background:linear-gradient(135deg,#0068ff,#0052cc);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;">💬 Gửi tin nhắn text</button>
+    <button type="button" onclick="saoChepNoiDungZalo()" style="width:100%;padding:11px;margin-bottom:8px;background:linear-gradient(135deg,#64748b,#94a3b8);color:#fff;border:none;border-radius:8px;font-weight:700;font-size:13px;cursor:pointer;">📋 Sao chép nội dung</button>
+    <button type="button" onclick="toggleZaloPanel(false)" style="width:100%;padding:10px;background:#f1f3f4;color:#5f6368;border:none;border-radius:8px;font-weight:600;font-size:13px;cursor:pointer;">Đóng</button>
+  </div>
+
+  <div class="card" style="margin-top:10px;border:1.5px solid #bae6fd;background:linear-gradient(180deg,#f0f9ff,#fff);">
+    <div style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:6px;">⚡ Trạm biến áp <span style="font-size:12px;font-weight:600;color:#0369a1;">(ảnh + GPS để nhớ vị trí)</span></div>
+    <input type="text" id="tenTBA" placeholder="VD: TBA Hòa Cường · TBA D1.1 · TBA Tây Hồ…" autocomplete="off"
+      oninput="luuTenTBA()" onblur="luuTenTBA()"
+      style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:16px;outline:none;font-weight:600;">
+    <div style="font-size:12px;font-weight:600;color:#475569;margin-top:8px;margin-bottom:10px;line-height:1.4;">
+      Chụp ảnh trạm kèm <b>tọa độ GPS</b> để lần sau biết đúng vị trí. Mỗi trạm 1 file riêng khi <b>Lưu tệp</b>.
+    </div>
+    <!-- Ảnh trạm + GPS -->
+    <div id="tramAnhBox" style="margin-bottom:10px;">
+      <div id="tramAnhPreview" style="display:none;position:relative;border-radius:12px;overflow:hidden;border:2px solid #0284c7;margin-bottom:8px;">
+        <img id="tramAnhImg" alt="Ảnh trạm" style="width:100%;max-height:220px;object-fit:cover;display:block;cursor:pointer;" onclick="xemAnhLon(this.src)"/>
+        <button type="button" onclick="xoaAnhTram()" style="position:absolute;top:8px;right:8px;width:32px;height:32px;border:none;border-radius:50%;background:rgba(220,38,38,.9);color:#fff;font-size:18px;font-weight:800;cursor:pointer;">×</button>
+      </div>
+      <div id="tramGeoInfo" style="font-size:13px;font-weight:700;color:#0f766e;margin-bottom:8px;min-height:18px;"></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <label for="tramCamInput" style="flex:1.4;min-width:140px;padding:14px 12px;border:none;border-radius:11px;background:linear-gradient(135deg,#0284c7,#0ea5e9);color:#fff;font-size:14px;font-weight:800;min-height:48px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;">📷 Chụp trạm + GPS</label>
+        <label for="tramGalInput" style="flex:1;min-width:100px;padding:14px 10px;border:none;border-radius:11px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-size:13px;font-weight:700;min-height:48px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;">🖼️ Thư viện</label>
+        <button type="button" onclick="layGPSTram()" style="flex:1;min-width:90px;padding:14px 10px;border:none;border-radius:11px;background:linear-gradient(135deg,#0d9488,#14b8a6);color:#fff;font-size:13px;font-weight:700;min-height:48px;cursor:pointer;">📡 GPS</button>
+      </div>
+      <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
+        <button type="button" onclick="moMapsTram()" style="flex:1;min-width:100px;padding:11px;border:none;border-radius:10px;background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff;font-size:13px;font-weight:700;min-height:42px;cursor:pointer;">📍 Maps trạm</button>
+        <button type="button" onclick="chiDuongTram()" style="flex:1;min-width:100px;padding:11px;border:none;border-radius:10px;background:linear-gradient(135deg,#ea580c,#f97316);color:#fff;font-size:13px;font-weight:700;min-height:42px;cursor:pointer;">🧭 Chỉ đường</button>
+      </div>
+      <input type="file" id="tramCamInput" accept="image/*" capture="environment" class="file-hidden" onchange="xuLyAnhTram(this)">
+      <input type="file" id="tramGalInput" accept="image/*" class="file-hidden" onchange="xuLyAnhTram(this)">
+    </div>
+    <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;">
+      <button type="button" onclick="batDauTramMoi()" style="flex:1.2;min-width:140px;padding:12px;border:2px dashed #0284c7;border-radius:10px;background:#f0f9ff;color:#0369a1;font-size:13px;font-weight:800;min-height:44px;cursor:pointer;">🆕 Trạm mới (xóa sạch)</button>
+      <button type="button" onclick="xoaDanhSach()" style="flex:1;min-width:120px;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#dc2626,#ef4444);color:#fff;font-size:13px;font-weight:800;min-height:44px;cursor:pointer;">🗑️ Xóa hết cột/ảnh</button>
+    </div>
+  </div>
+
+  <!-- Danh sách công tơ toàn trạm (Excel) — dùng để OCR ghép khách -->
+  <div class="card" style="border:2px solid #7c3aed;background:linear-gradient(180deg,#faf5ff,#fff);">
+    <div style="font-size:15px;font-weight:800;color:#5b21b6;margin-bottom:6px;">📋 Danh sách công tơ toàn trạm (Excel)</div>
+    <div style="font-size:12px;font-weight:600;color:#334155;margin-bottom:10px;line-height:1.4;">
+      Chọn <b>1 lần</b> file Excel danh sách công tơ theo trạm (có cột NO / Số công tơ, Tên KH, Mã KH, SĐT, Địa chỉ).<br>
+      Khi chụp/gắn ảnh cột có ghi <b>4–5 số cuối NO</b>, app sẽ đọc số và <b>tự gắn khách hàng</b> khớp.
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;">
+      <label for="masterExcelInput" style="flex:1.4;min-width:140px;padding:14px 12px;border:none;border-radius:11px;background:linear-gradient(135deg,#7c3aed,#8b5cf6);color:#fff;font-size:14px;font-weight:800;min-height:48px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;">📂 Chọn Excel danh sách CT</label>
+      <button type="button" onclick="xoaMasterList()" style="flex:0.8;min-width:90px;padding:14px 10px;border:none;border-radius:11px;background:linear-gradient(135deg,#dc2626,#ef4444);color:#fff;font-size:13px;font-weight:700;min-height:48px;cursor:pointer;">🗑️ Xóa DS</button>
+    </div>
+    <input type="file" id="masterExcelInput" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv" class="file-hidden" onchange="importMasterExcel(this)">
+    <div id="masterListStatus" style="font-size:13px;font-weight:700;color:#5b21b6;min-height:20px;text-align:center;"></div>
+    <button type="button" onclick="ocrTatCaCot()" style="width:100%;margin-top:8px;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;font-size:14px;font-weight:800;min-height:44px;cursor:pointer;">🔍 OCR lại tất cả cột (đọc NO → Ghi chú + gắn khách)</button>
+  </div>
+
+  <div class="card" style="border:2px solid #0d9488;">
+    <div style="font-size:16px;font-weight:800;color:#0f766e;margin-bottom:6px;">📷 Thêm cột / tủ bằng ảnh</div>
+    <div style="font-size:13px;font-weight:600;color:#334155;margin-bottom:12px;line-height:1.4;">
+      <b>1 ảnh = 1 cột (hoặc 1 tủ)</b>. Ghi <b>4–5 số cuối NO</b> trên ảnh → app tự đọc &amp; gắn khách từ danh sách Excel.<br>
+      <span style="color:#b45309;">⚠️ Đổi trạm khác:</span> bấm <b>🆕 Trạm mới</b> hoặc <b>🗑️ Xóa hết cột/ảnh</b> trước khi up ảnh — tránh đè lên nhau.
+    </div>
+    <div style="display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap;">
+      <label for="newCamInput" style="flex:1;min-width:120px;padding:16px 12px;border:none;border-radius:12px;background:linear-gradient(135deg,#7c3aed,#8b5cf6);color:#fff;font-size:15px;font-weight:800;min-height:56px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;">📷 Chụp 1 ảnh cột</label>
+      <label for="newGalInput" style="flex:1;min-width:120px;padding:16px 12px;border:none;border-radius:12px;background:linear-gradient(135deg,#0d9488,#14b8a6);color:#fff;font-size:15px;font-weight:800;min-height:56px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;">🖼️ Chọn nhiều ảnh</label>
+    </div>
+    <button type="button" onclick="themViTriMoi()" style="width:100%;margin-bottom:8px;padding:12px;border:2px dashed #0d9488;border-radius:11px;background:#f0fdfa;color:#0f766e;font-size:14px;font-weight:800;min-height:44px;cursor:pointer;">➕ Thêm cột trống (không ảnh)</button>
+    <input type="file" id="newCamInput" accept="image/*" capture="environment" class="file-hidden" onchange="themCotTuAnh(this)">
+    <input type="file" id="newGalInput" accept="image/*" multiple class="file-hidden" onchange="themCotTuAnh(this)">
+    <div id="newAnhStatus" style="font-size:13px;font-weight:700;color:#0f766e;min-height:18px;text-align:center;"></div>
+  </div>
+
+  <div style="margin:0 12px 8px;padding:12px;background:#ecfdf5;border:2px solid #14b8a6;border-radius:12px;">
+    <div style="font-size:14px;font-weight:800;color:#0f766e;margin-bottom:6px;">💾 Lưu từng trạm &amp; mở lại</div>
+    <div style="font-size:12px;font-weight:600;color:#334155;margin-bottom:10px;line-height:1.4;">
+      <b>Mỗi trạm = 1 file riêng</b> trong Files (tên file có tên trạm).<br>
+      <b>Lưu:</b> điền tên trạm → bấm <b>Lưu tệp</b> → iPhone chọn <b>«Lưu vào Tệp»</b>. File gồm cột, ảnh, công tơ, ghi chú <b>và danh sách Excel CT</b>.<br>
+      <b>Mở lại:</b> <b>Mở trạm đã lưu</b> → Gần đây / Files → chọn file <b>.json</b> của đúng trạm (tự xóa dữ liệu màn hình cũ, nạp trạm mới).
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button type="button" class="btn-save-backup" onclick="luuBanSao()" style="flex:1.3;min-width:140px;">💾 Lưu tệp trạm này</button>
+      <label class="btn-import" for="fileImport" style="flex:1.3;min-width:140px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;background:linear-gradient(135deg,#2563eb,#3b82f6);">📂 Mở trạm đã lưu</label>
+      <button type="button" class="btn-export" onclick="exportDanhSach()" style="flex:1;min-width:100px;">📤 Excel</button>
+      <button type="button" class="btn-clear-list" onclick="xoaDanhSach()" style="flex:0.8;min-width:80px;">🗑️ Xóa</button>
+    </div>
+    <input type="file" id="fileImport" accept=".json,application/json,.xlsx,.xls,.csv,*/*" style="display:none;">
+  </div>
+  <div id="importStatus" style="margin:0 12px 6px;font-size:12px;text-align:center;color:#8e8e93;min-height:16px;"></div>
+  <div id="lastSaveInfo" style="margin:0 12px 8px;font-size:13px;color:#0f766e;text-align:center;font-weight:700;min-height:18px;"></div>
+
+  <div class="stats" id="stats">
+    Cột/tủ: <strong id="stat-total">0</strong> · Công tơ: <strong id="stat-ct">0</strong>
+    · ✅ <strong id="stat-du">0</strong> · ⚠️ <strong id="stat-chua">0</strong> · ⏳ <strong id="stat-chua-xl">0</strong>
+  </div>
+
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Tìm số cột, địa chỉ, tên KH, SĐT, NO…" oninput="timKiem()" autocomplete="off">
+    <button class="clear-search" onclick="xoaTimKiem()">×</button>
+  </div>
+  <div class="filter-bar">
+    <button class="filter-btn active" id="filter-all" onclick="filterItems('all')">📋 Tất cả</button>
+    <button class="filter-btn" id="filter-du" onclick="filterItems('du')">✅ Đã HT</button>
+    <button class="filter-btn" id="filter-chua" onclick="filterItems('chua')">⚠️ Chưa HT</button>
+    <button class="filter-btn" id="filter-chua-xl" onclick="filterItems('chua-xl')">⏳ Chưa XL</button>
+  </div>
+  <div class="view-toggle">
+    <button type="button" class="view-btn active" id="viewCard" onclick="setViewMode('card')">📋 Dạng thẻ</button>
+    <button type="button" class="view-btn" id="viewTable" onclick="setViewMode('table')">📊 Bảng</button>
+  </div>
+  <div class="table-hint">Mỗi thẻ = 1 ảnh cột · Điền số cột, địa chỉ · Gắn công tơ (tên KH · mã KH · SĐT · địa chỉ · NO)</div>
+
+  <div class="table-wrap" id="tableWrap">
+    <table class="excel-table" id="excelTable">
+      <thead id="excelThead"></thead>
+      <tbody id="excelTbody"></tbody>
+    </table>
+  </div>
+  <div id="itemList"></div>
+
+  <div class="app-footer">
+    <strong>HDT quản lý trạm 0983666086</strong> · Cột / Tủ & Công tơ khách hàng · EVN<br>
+    Dữ liệu lưu cục bộ trên thiết bị của bạn
+  </div>
+
+  <script>
+    const LS = {
+      items: 'hdtct_items',
+      tenTba: 'hdtct_ten_tba',
+      anhTram: 'hdtct_anh_tram',
+      geoTram: 'hdtct_geo_tram',
+      status: function(id) { return 'hdtct_status_' + id; },
+      note: function(id) { return 'hdtct_note_' + id; },
+      anh: function(id) { return 'hdtct_anh_' + id; },
+      geo: function(id) { return 'hdtct_geo_' + id; },
+      congto: function(id) { return 'hdtct_congto_' + id; },
+      view: 'hdtct_view_mode',
+      lastBackup: 'hdtct_last_backup',
+      masterList: 'hdtct_master_congto'
+    };
+
+    let items = [];
+    let currentFilter = 'all';
+    let currentSearch = '';
+    let viewMode = 'card';
+    let _congToTargetId = null;
+    let _tablePhotoTargetId = null;
+    let _newAnhPending = [];
+    /** Danh sách công tơ toàn trạm từ Excel: [{soCongTo, tenKH, maKH, sdt, diaChi}, ...] */
+    let masterCongToList = [];
+
+    function escapeHtml(str) {
+      if (str == null) return '';
+      return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+    }
+    function findItem(id) {
+      var sid = String(id);
+      return items.find(function(c) { return String(c.id) === sid; }) || null;
+    }
+    function sameId(a, b) { return String(a) === String(b); }
+    /** Nút Gọi + Tin nhắn cạnh SĐT khách hàng */
+    function buildContactButtons(sdt, style) {
+      var sdtClean = String(sdt || '').replace(/\s/g, '');
+      if (!sdtClean) return '';
+      var tel = escapeHtml(sdtClean);
+      var label = escapeHtml(sdt);
+      if (style === 'kh') {
+        return '<div class="kh-contact-row">' +
+          '<a class="kh-call" href="tel:' + tel + '">📞 ' + label + '</a>' +
+          '<a class="kh-sms" href="sms:' + tel + '">💬 Tin nhắn</a>' +
+          '</div>';
+      }
+      if (style === 'mini') {
+        return '<a class="ct-phone" href="tel:' + tel + '">📞 ' + label + '</a>' +
+          '<a class="ct-sms" href="sms:' + tel + '">💬 Tin nhắn</a>';
+      }
+      // modal / default
+      return '<div class="btn-contact-row">' +
+        '<a class="btn-call" href="tel:' + tel + '">📞 Gọi</a>' +
+        '<a class="btn-sms" href="sms:' + tel + '">💬 Tin nhắn</a>' +
+        '</div>';
+    }
+    function safeSetItem(key, value) {
+      try { localStorage.setItem(key, value); return true; }
+      catch (e) {
+        showToast(e && (e.name === 'QuotaExceededError') ? 'Bộ nhớ đầy! Xóa bớt ảnh.' : 'Lỗi lưu', 'err');
+        return false;
+      }
+    }
+    function showToast(msg, type) {
+      var el = document.getElementById('toastMsg');
+      if (!el) return;
+      el.textContent = msg;
+      el.className = 'toast-msg show' + (type === 'ok' ? ' ok' : (type === 'err' ? ' err' : ''));
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(function() { el.classList.remove('show'); }, 2500);
+    }
+
+    function loadItems() {
+      try { items = JSON.parse(localStorage.getItem(LS.items) || '[]'); } catch (e) { items = []; }
+    }
+    function saveItems() { safeSetItem(LS.items, JSON.stringify(items)); }
+
+    function getTenTBA() { try { return localStorage.getItem(LS.tenTba) || ''; } catch (e) { return ''; } }
+    function luuTenTBA() {
+      var el = document.getElementById('tenTBA');
+      if (el) safeSetItem(LS.tenTba, el.value || '');
+    }
+    function taiTenTBA() {
+      var el = document.getElementById('tenTBA');
+      if (el) el.value = getTenTBA();
+    }
+
+    // ===== Ảnh + GPS trạm biến áp =====
+    function getAnhTram() {
+      try {
+        var r = JSON.parse(localStorage.getItem(LS.anhTram) || 'null');
+        return (r && r.data) ? r : null;
+      } catch (e) { return null; }
+    }
+    function saveAnhTram(photo) {
+      if (!photo) { try { localStorage.removeItem(LS.anhTram); } catch (e) {} return true; }
+      return safeSetItem(LS.anhTram, JSON.stringify(photo));
+    }
+    function getGeoTram() {
+      try {
+        var g = JSON.parse(localStorage.getItem(LS.geoTram) || 'null');
+        return (g && typeof g.lat === 'number') ? g : null;
+      } catch (e) { return null; }
+    }
+    function saveGeoTram(geo) {
+      if (!geo) { try { localStorage.removeItem(LS.geoTram); } catch (e) {} return true; }
+      return safeSetItem(LS.geoTram, JSON.stringify(geo));
+    }
+    function formatTramGeoHtml() {
+      var g = getGeoTram();
+      if (!g) return '<span style="color:#94a3b8;font-weight:600;">Chưa có tọa độ trạm — bấm 📡 GPS hoặc 📷 Chụp trạm + GPS</span>';
+      var acc = g.accuracy != null ? (' ±' + Math.round(g.accuracy) + 'm') : '';
+      return '📍 ' + g.lat.toFixed(6) + ', ' + g.lng.toFixed(6) + acc;
+    }
+    function hienThiAnhVaGPSTram() {
+      var photo = getAnhTram();
+      var box = document.getElementById('tramAnhPreview');
+      var img = document.getElementById('tramAnhImg');
+      var geoEl = document.getElementById('tramGeoInfo');
+      if (box && img) {
+        if (photo && photo.data) {
+          img.src = photo.data;
+          box.style.display = 'block';
+        } else {
+          img.removeAttribute('src');
+          box.style.display = 'none';
+        }
+      }
+      if (geoEl) geoEl.innerHTML = formatTramGeoHtml();
+    }
+    function xuLyAnhTram(input) {
+      var file = input.files && input.files[0];
+      if (!file) return;
+      showToast('⏳ Đang lưu ảnh trạm + lấy GPS...', 'ok');
+      compressImageFile(file).then(function(photo) {
+        if (!photo || !photo.data) {
+          showToast('Không đọc được ảnh', 'err');
+          return;
+        }
+        saveAnhTram(photo);
+        hienThiAnhVaGPSTram();
+        // Tự lấy GPS khi chụp
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(pos) {
+            var geo = {
+              lat: pos.coords.latitude,
+              lng: pos.coords.longitude,
+              accuracy: pos.coords.accuracy,
+              time: new Date().toISOString()
+            };
+            saveGeoTram(geo);
+            hienThiAnhVaGPSTram();
+            showToast('✅ Đã lưu ảnh trạm + GPS (±' + Math.round(geo.accuracy || 0) + 'm)', 'ok');
+          }, function(err) {
+            showToast('✅ Đã lưu ảnh trạm · GPS: ' + (err.code === 1 ? 'từ chối quyền' : 'không lấy được'), 'err');
+          }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 30000 });
+        } else {
+          showToast('✅ Đã lưu ảnh trạm (máy không hỗ trợ GPS)', 'ok');
+        }
+        try { input.value = ''; } catch (e) {}
+      }).catch(function() {
+        showToast('Lỗi xử lý ảnh trạm', 'err');
+      });
+    }
+    function xoaAnhTram() {
+      if (!getAnhTram()) { showToast('Chưa có ảnh trạm', 'err'); return; }
+      if (!confirm('Xóa ảnh trạm này?')) return;
+      saveAnhTram(null);
+      hienThiAnhVaGPSTram();
+      showToast('Đã xóa ảnh trạm', 'ok');
+    }
+    function layGPSTram() {
+      if (!navigator.geolocation) { showToast('Thiết bị không hỗ trợ GPS', 'err'); return; }
+      showToast('⏳ Đang lấy GPS trạm...', 'ok');
+      navigator.geolocation.getCurrentPosition(function(pos) {
+        var geo = {
+          lat: pos.coords.latitude,
+          lng: pos.coords.longitude,
+          accuracy: pos.coords.accuracy,
+          time: new Date().toISOString()
+        };
+        saveGeoTram(geo);
+        hienThiAnhVaGPSTram();
+        showToast('✅ GPS trạm (±' + Math.round(geo.accuracy || 0) + 'm)', 'ok');
+      }, function(err) {
+        showToast(err.code === 1 ? 'Từ chối quyền vị trí' : 'Không lấy được GPS', 'err');
+      }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 });
+    }
+    function moMapsTram() {
+      var g = getGeoTram();
+      var ten = getTenTBA();
+      var url = g
+        ? 'https://www.google.com/maps?q=' + encodeURIComponent(g.lat + ',' + g.lng)
+        : 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(ten || 'Trạm biến áp');
+      window.open(url, '_blank');
+      showToast('📍 Đang mở Maps trạm...', 'ok');
+    }
+    function chiDuongTram() {
+      var g = getGeoTram();
+      var ten = getTenTBA();
+      var dest = g ? (g.lat + ',' + g.lng) : ten;
+      if (!dest) { showToast('Chưa có tên trạm / tọa độ', 'err'); return; }
+      window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(dest) + '&travelmode=driving', '_blank');
+      showToast('🧭 Đang mở chỉ đường tới trạm...', 'ok');
+    }
+
+    function getCongTo(id) {
+      try {
+        var r = JSON.parse(localStorage.getItem(LS.congto(id)) || '[]');
+        return Array.isArray(r) ? r : [];
+      } catch (e) { return []; }
+    }
+    function saveCongTo(id, list) { return safeSetItem(LS.congto(id), JSON.stringify(list || [])); }
+
+    function getAnh(id) {
+      try { return JSON.parse(localStorage.getItem(LS.anh(id)) || '[]'); } catch (e) { return []; }
+    }
+    function saveAnh(id, list) { return safeSetItem(LS.anh(id), JSON.stringify(list || [])); }
+
+    function getGeo(id) {
+      try {
+        var g = JSON.parse(localStorage.getItem(LS.geo(id)) || 'null');
+        return (g && typeof g.lat === 'number') ? g : null;
+      } catch (e) { return null; }
+    }
+    function saveGeo(id, geo) {
+      if (!geo) { try { localStorage.removeItem(LS.geo(id)); } catch (e) {} return true; }
+      return safeSetItem(LS.geo(id), JSON.stringify(geo));
+    }
+    function formatGeoText(id) {
+      var g = getGeo(id);
+      if (!g) return '<span class="empty">Chưa có tọa độ</span>';
+      var acc = g.accuracy != null ? (' ±' + Math.round(g.accuracy) + 'm') : '';
+      return '📍 ' + g.lat.toFixed(6) + ', ' + g.lng.toFixed(6) + acc;
+    }
+
+    function setViewMode(mode) {
+      viewMode = mode === 'card' ? 'card' : 'table';
+      try { localStorage.setItem(LS.view, viewMode); } catch (e) {}
+      document.getElementById('viewCard').classList.toggle('active', viewMode === 'card');
+      document.getElementById('viewTable').classList.toggle('active', viewMode === 'table');
+      document.getElementById('tableWrap').classList.toggle('show', viewMode === 'table');
+      document.getElementById('itemList').classList.toggle('hide-cards', viewMode === 'table');
+      if (viewMode === 'table') renderTable(); else renderItems();
+      applyFilters();
+    }
+    function refreshView() {
+      if (viewMode === 'table') renderTable(); else renderItems();
+    }
+
+    // ===== Danh sách công tơ toàn trạm (Excel master) + OCR =====
+    function loadMasterList() {
+      try {
+        var raw = localStorage.getItem(LS.masterList);
+        masterCongToList = raw ? JSON.parse(raw) : [];
+        if (!Array.isArray(masterCongToList)) masterCongToList = [];
+      } catch (e) { masterCongToList = []; }
+      updateMasterListStatus();
+    }
+    function saveMasterList() {
+      return safeSetItem(LS.masterList, JSON.stringify(masterCongToList));
+    }
+    function updateMasterListStatus() {
+      var el = document.getElementById('masterListStatus');
+      if (!el) return;
+      if (!masterCongToList.length) {
+        el.textContent = '⚠️ Chưa có danh sách — chọn Excel để OCR gắn khách tự động';
+        el.style.color = '#b45309';
+      } else {
+        el.textContent = '✅ Đã nạp ' + masterCongToList.length + ' công tơ · sẵn sàng OCR gắn khách';
+        el.style.color = '#5b21b6';
+      }
+    }
+    function xoaMasterList() {
+      if (!masterCongToList.length) { showToast('Danh sách trống', 'err'); return; }
+      if (!confirm('Xóa danh sách công tơ toàn trạm (' + masterCongToList.length + ' dòng)?')) return;
+      masterCongToList = [];
+      try { localStorage.removeItem(LS.masterList); } catch (e) {}
+      updateMasterListStatus();
+      showToast('Đã xóa danh sách CT', 'ok');
+    }
+    function findColMaster(row, names) {
+      var keys = Object.keys(row);
+      for (var i = 0; i < names.length; i++) {
+        var target = names[i].toLowerCase().replace(/\s/g, '');
+        var found = keys.find(function(k) {
+          var nk = String(k).toLowerCase().replace(/\s/g, '');
+          return nk.indexOf(target) >= 0 || target.indexOf(nk) >= 0;
+        });
+        if (found && String(row[found]).trim()) return String(row[found]).trim();
+      }
+      return '';
+    }
+    function importMasterExcel(input) {
+      var file = input.files && input.files[0];
+      if (!file) return;
+      if (typeof XLSX === 'undefined') {
+        showToast('Thư viện Excel chưa sẵn sàng, thử lại sau vài giây', 'err');
+        return;
+      }
+      var st = document.getElementById('masterListStatus');
+      if (st) { st.textContent = '⏳ Đang đọc Excel...'; st.style.color = '#5b21b6'; }
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          var wb = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
+          var sheet = wb.Sheets[wb.SheetNames[0]];
+          var json = XLSX.utils.sheet_to_json(sheet, { defval: '' });
+          if (!json.length) { showToast('File Excel trống', 'err'); updateMasterListStatus(); return; }
+          var list = [];
+          json.forEach(function(row) {
+            var so = findColMaster(row, ['số công tơ', 'so cong to', 'số ct', 'so ct', 'no', 'n.o', 'số no', 'so no', 'công tơ', 'cong to', 'số seri', 'seri']);
+            var ten = findColMaster(row, ['tên khách hàng', 'ten khach hang', 'tên kh', 'ten kh', 'họ tên', 'ho ten', 'tên', 'ten']);
+            var ma = findColMaster(row, ['mã khách hàng', 'ma khach hang', 'mã kh', 'ma kh', 'mã', 'ma']);
+            var sdt = findColMaster(row, ['sđt', 'sdt', 'số điện thoại', 'so dien thoai', 'điện thoại', 'dien thoai', 'phone', 'tel']);
+            var dia = findColMaster(row, ['địa chỉ', 'dia chi', 'địa chỉ kh', 'dia chi kh', 'address', 'địa chỉ khách hàng']);
+            if (!so && !ten && !ma && !sdt) return;
+            list.push({
+              soCongTo: so,
+              tenKH: ten,
+              maKH: ma,
+              sdt: sdt,
+              diaChi: dia
+            });
+          });
+          if (!list.length) {
+            showToast('Không nhận diện được cột NO / Tên KH trong file', 'err');
+            updateMasterListStatus();
+            return;
+          }
+          masterCongToList = list;
+          saveMasterList();
+          updateMasterListStatus();
+          showToast('✅ Đã nạp ' + list.length + ' công tơ từ Excel', 'ok');
+        } catch (err) {
+          showToast('Lỗi đọc Excel: ' + (err.message || err), 'err');
+          updateMasterListStatus();
+        }
+        try { input.value = ''; } catch (ex) {}
+      };
+      reader.onerror = function() { showToast('Không đọc được file', 'err'); updateMasterListStatus(); };
+      reader.readAsArrayBuffer(file);
+    }
+
+    /** Chuẩn hóa chuỗi số: chỉ giữ chữ số */
+    function onlyDigits(s) {
+      return String(s || '').replace(/\D/g, '');
+    }
+
+    /**
+     * Trích mọi cụm số 4–12 chữ số từ text OCR.
+     * Ưu tiên dòng Remark camera: "Remark: Cột 1 no 3167-1694-4066"
+     *                  "Remark: C1 No 0553-3242-1823"
+     */
+    /**
+     * Trích cụm số NO 4–14 chữ số từ text OCR.
+     * KHÔNG phụ thuộc chữ "Remark" — chỉ cần có số trên ảnh
+     * (viết tay, overlay camera, hoặc dòng no 3167-1694-4066).
+     */
+    function extractNoCandidates(text) {
+      var full = String(text || '');
+      var candidates = [];
+      var seen = {};
+      function add(s) {
+        var d = onlyDigits(s);
+        // Bỏ số năm 202x trong timestamp camera
+        if (d.length === 4 && /^20[2-3]\d$/.test(d)) return;
+        // Bỏ giờ kiểu 2022, 0522 nếu nghi timestamp — giữ nếu ≥4 và không phải năm
+        if (d.length >= 4 && d.length <= 14 && !seen[d]) {
+          seen[d] = true;
+          candidates.push(d);
+        }
+      }
+      function addDashGroup(str) {
+        if (!str) return;
+        String(str).split(/[\s\-–—\.\/,;|]+/).forEach(function(p) { add(p); });
+        var joined = onlyDigits(str);
+        if (joined.length >= 8 && joined.length <= 20) add(joined);
+      }
+
+      // 1) QUAN TRỌNG NHẤT: mọi cụm dạng 3167-1694-4066 / 0553-3242-1823 (có hoặc không chữ Remark)
+      var dashGroups = full.match(/\d{3,6}(?:\s*[\-–—]\s*\d{3,6}){1,5}/g);
+      if (dashGroups) {
+        dashGroups.forEach(function(g) { addDashGroup(g); });
+      }
+
+      // 2) Mọi cụm 4+ chữ số trong toàn text (viết tay / overlay không có chữ "no")
+      var re = /\d{4,14}/g;
+      var m;
+      while ((m = re.exec(full)) !== null) add(m[0]);
+
+      // 3) Pattern có chữ no / remark (nếu máy ảnh có) — bổ sung, không bắt buộc
+      var optionalPatterns = [
+        /(?:remark\s*[:\-.]?\s*)?[^\d\n]{0,20}?no\s*[:\-.]?\s*([0-9][0-9\s\-–—\.]{3,40})/ig,
+        /(?:^|[\s:])no\s*[:\-.]?\s*([0-9][0-9\s\-–—\.]{3,40})/ig
+      ];
+      optionalPatterns.forEach(function(pat) {
+        var mm;
+        while ((mm = pat.exec(full)) !== null) addDashGroup(mm[1]);
+      });
+
+      // 4) Dòng có "no" / "cột" / "c1"
+      full.split(/[\r\n]+/).forEach(function(line) {
+        var low = line.toLowerCase();
+        if (/no\b|remark|c[oôó]t|cong\s*to|\bct\b|c1\b|c\d/.test(low)) {
+          line.split(/[\s\-–—\.\/,;|]+/).forEach(function(p) { add(p); });
+          var afterNo = line.match(/no\s*[:\-.]?\s*([0-9\-–—\.\s]{4,40})/i);
+          if (afterNo) addDashGroup(afterNo[1]);
+        }
+      });
+
+      return candidates;
+    }
+
+    /**
+     * Khớp master list theo 4 hoặc 5 số cuối (hoặc bằng đúng) của NO.
+     * VD ảnh: "0553-3242-1823" → khớp mọi CT trong Excel có đuôi 0553 / 3242 / 1823.
+     */
+    function matchMasterBySuffix(textOrDigits) {
+      var candidates = extractNoCandidates(textOrDigits);
+      if (!candidates.length) {
+        var raw = onlyDigits(textOrDigits);
+        if (raw.length >= 4) candidates = [raw];
+      }
+      if (!candidates.length) return [];
+
+      var matched = [];
+      var seen = {};
+      candidates.forEach(function(cand) {
+        var suffixes = [];
+        if (cand.length >= 5) suffixes.push(cand.slice(-5));
+        if (cand.length >= 4) suffixes.push(cand.slice(-4));
+        if (cand.length >= 4 && cand.length <= 14) suffixes.push(cand);
+        // Bỏ số 0 đầu (Excel đôi khi lưu 553 thay vì 0553)
+        if (cand.length >= 5 && cand.charAt(0) === '0') {
+          suffixes.push(cand.replace(/^0+/, ''));
+          var stripped = cand.replace(/^0+/, '');
+          if (stripped.length >= 4) suffixes.push(stripped.slice(-4));
+        }
+        suffixes = suffixes.filter(function(s, i, arr) {
+          return s && s.length >= 4 && arr.indexOf(s) === i;
+        });
+
+        masterCongToList.forEach(function(ct) {
+          var no = onlyDigits(ct.soCongTo);
+          if (!no || no.length < 4) return;
+          var noNoZero = no.replace(/^0+/, '') || no;
+          for (var i = 0; i < suffixes.length; i++) {
+            var suf = suffixes[i];
+            var ok = no === suf ||
+              no.slice(-suf.length) === suf ||
+              noNoZero.slice(-suf.length) === suf ||
+              (suf.length >= 4 && no.indexOf(suf) >= 0) ||
+              (suf.length >= 4 && noNoZero.indexOf(suf) >= 0);
+            if (ok) {
+              var key = (ct.soCongTo || '') + '|' + (ct.maKH || '') + '|' + (ct.sdt || '');
+              if (!seen[key]) {
+                seen[key] = true;
+                matched.push({
+                  soCongTo: ct.soCongTo || '',
+                  tenKH: ct.tenKH || '',
+                  maKH: ct.maKH || '',
+                  sdt: ct.sdt || '',
+                  diaChi: ct.diaChi || '',
+                  _matchedSuffix: suf
+                });
+              }
+              break;
+            }
+          }
+        });
+      });
+      return matched;
+    }
+
+    /**
+     * Cắt vùng trên ảnh (dòng Remark camera) + xử lý ảnh để chữ TRẮNG nổi rõ.
+     * Lỗi cũ: threshold g>140 biến tường xám + chữ trắng cùng thành trắng → mất chữ.
+     * Cách mới: lấy pixel sáng (chữ trắng) → đen trên nền trắng (Tesseract đọc tốt hơn).
+     */
+    function cropTopForOcr(dataUrl, mode) {
+      mode = mode || 'invert';
+      return new Promise(function(resolve) {
+        try {
+          var img = new Image();
+          img.onload = function() {
+            try {
+              var w = img.naturalWidth, h = img.naturalHeight;
+              // Remark nằm ~8–18% chiều cao phía trên; lấy rộng hơn để an toàn
+              var cropH = Math.max(100, Math.round(h * 0.22));
+              var canvas = document.createElement('canvas');
+              // Phóng to 1.5x giúp OCR đọc số nhỏ rõ hơn
+              var scale = 1.6;
+              canvas.width = Math.round(w * scale);
+              canvas.height = Math.round(cropH * scale);
+              var ctx = canvas.getContext('2d');
+              ctx.imageSmoothingEnabled = true;
+              ctx.drawImage(img, 0, 0, w, cropH, 0, 0, canvas.width, canvas.height);
+              try {
+                var id = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                var d = id.data;
+                // Tính ngưỡng sáng theo vùng (chữ trắng thường > 200)
+                var sum = 0, count = 0;
+                for (var i = 0; i < d.length; i += 4) {
+                  var g0 = 0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2];
+                  sum += g0; count++;
+                }
+                var avg = sum / (count || 1);
+                // Chữ trắng trên nền tường: pixel sáng hơn avg một khoảng → coi là chữ
+                var thr = Math.max(175, Math.min(230, avg + 35));
+                for (var j = 0; j < d.length; j += 4) {
+                  var g = 0.299 * d[j] + 0.587 * d[j + 1] + 0.114 * d[j + 2];
+                  var isText = g >= thr;
+                  var v;
+                  if (mode === 'invert') {
+                    // Chữ trắng → đen, nền → trắng (OCR thích chữ đen)
+                    v = isText ? 0 : 255;
+                  } else if (mode === 'bw') {
+                    v = isText ? 255 : 0;
+                  } else {
+                    // Chỉ tăng tương phản, không nhị phân hóa
+                    v = g < avg - 20 ? Math.max(0, g - 40) : (g > thr - 20 ? 255 : g);
+                  }
+                  d[j] = d[j + 1] = d[j + 2] = v;
+                }
+                ctx.putImageData(id, 0, 0);
+              } catch (e2) {}
+              resolve(canvas.toDataURL('image/png'));
+            } catch (e) { resolve(dataUrl); }
+          };
+          img.onerror = function() { resolve(dataUrl); };
+          img.src = dataUrl;
+        } catch (e) { resolve(dataUrl); }
+      });
+    }
+
+    /** Chạy OCR — thử nhiều cách xử lý vùng Remark, fallback cả ảnh */
+    function ocrImageDataUrl(dataUrl) {
+      return new Promise(function(resolve, reject) {
+        function runRecognize(src, psm) {
+          return Tesseract.recognize(src, 'eng', {
+            logger: function() {},
+            tessedit_pageseg_mode: String(psm || '6'),
+            tessedit_char_whitelist: '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz:.-/ '
+          }).then(function(result) {
+            return (result && result.data && result.data.text) ? result.data.text : '';
+          });
+        }
+        function tryVariants(variants, idx, collected) {
+          if (idx >= variants.length) {
+            resolve(collected.join('\n'));
+            return;
+          }
+          var v = variants[idx];
+          runRecognize(v.src, v.psm).then(function(text) {
+            if (text) collected.push(text);
+            var cands = extractNoCandidates(collected.join('\n'));
+            // Đã có ít nhất 1 cụm số 4+ chữ số (không phải năm 202x) → đủ
+            if (cands.length >= 1) {
+              resolve(collected.join('\n'));
+              return;
+            }
+            tryVariants(variants, idx + 1, collected);
+          }).catch(function() {
+            tryVariants(variants, idx + 1, collected);
+          });
+        }
+        function run() {
+          if (typeof Tesseract === 'undefined') {
+            reject(new Error('OCR chưa sẵn sàng'));
+            return;
+          }
+          Promise.all([
+            cropTopForOcr(dataUrl, 'invert'),
+            cropTopForOcr(dataUrl, 'bw'),
+            cropTopForOcr(dataUrl, 'contrast')
+          ]).then(function(tops) {
+            var variants = [
+              { src: tops[0], psm: '6' },
+              { src: tops[0], psm: '7' },
+              { src: tops[1], psm: '6' },
+              { src: tops[2], psm: '6' },
+              { src: dataUrl, psm: '11' },
+              { src: dataUrl, psm: '6' }
+            ];
+            tryVariants(variants, 0, []);
+          }).catch(function() {
+            runRecognize(dataUrl, '6').then(resolve).catch(reject);
+          });
+        }
+        if (window.__tesseractReady) run();
+        else onTesseractReady(run);
+      });
+    }
+
+    /**
+     * Lấy nội dung ghi chú từ ảnh — KHÔNG phụ thuộc chữ "Remark".
+     * Quan trọng nhất: các cụm số NO 4–5 chữ số trên ảnh
+     * (vd: 3167-1694-4066 · 0553 3242 1823 · viết tay hoặc overlay camera).
+     */
+    function extractRemarkText(text) {
+      var full = String(text || '');
+      var lines = full.split(/[\r\n]+/).map(function(l) { return l.trim(); }).filter(Boolean);
+
+      // 1) Dòng có nhiều số / dạng xxx-xxx-xxx (bỏ timestamp Network/Local)
+      for (var i = 0; i < lines.length; i++) {
+        var line = lines[i];
+        if (/network\s*:|local\s*:|gmt\s*[+\-]?\d|^\d{1,2}\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(line)) continue;
+        var hasDashNo = /\d{3,6}\s*[\-–—]\s*\d{3,6}/.test(line);
+        var multiNums = (line.match(/\d{4,}/g) || []).length >= 2;
+        if (hasDashNo || multiNums) {
+          if (/remark/i.test(line)) {
+            return line.replace(/^.*?(remark\s*[:\-.]?\s*)/i, 'Remark: ').trim();
+          }
+          if (/\bno\b/i.test(line)) {
+            return 'NO: ' + line.replace(/^.*?\bno\b\s*[:\-.]?\s*/i, '').trim();
+          }
+          var numPart = line.match(/[0-9][0-9\s\-–—\.]{3,50}/);
+          if (numPart) return 'NO: ' + numPart[0].replace(/\s+/g, ' ').trim();
+          return 'NO: ' + line;
+        }
+      }
+
+      // 2) Dòng có chữ "no" + số (không cần Remark)
+      for (var j = 0; j < lines.length; j++) {
+        if (/\bno\b/i.test(lines[j]) && /\d{4}/.test(lines[j])) {
+          return 'NO: ' + lines[j].replace(/^.*?\bno\b\s*[:\-.]?\s*/i, '').trim();
+        }
+      }
+
+      // 3) Chỉ còn các cụm số → ghép ghi chú
+      var nums = extractNoCandidates(full).filter(function(n) {
+        return n.length >= 4 && n.length <= 8;
+      });
+      if (nums.length) return 'NO: ' + nums.join('-');
+      return '';
+    }
+
+    /** Trích "Cột 1" / "C1" từ Remark để gợi ý số cột */
+    function extractSoCotTuFromRemark(text) {
+      var full = String(text || '');
+      // Cột 1 / Cot 1 / Cột1 / Cot1
+      var m = full.match(/c[oôóòo]t\s*([0-9]{1,4})\b/i);
+      if (m) return 'Cột ' + m[1];
+      // C1 / C 1 (tránh khớp CT, Cong...)
+      m = full.match(/\bc\s*([0-9]{1,4})\b/i);
+      if (m) return 'Cột ' + m[1];
+      return '';
+    }
+
+    /**
+     * Tạo nội dung Ghi chú từ text OCR + các số NO tìm được.
+     * Luôn ưu tiên các số 4–5 chữ số trên ảnh.
+     */
+    function buildNoteFromOcr(ocrText, foundNums) {
+      var remark = extractRemarkText(ocrText || '');
+      var nums = (foundNums && foundNums.length) ? foundNums.slice() : extractNoCandidates(ocrText || '');
+      // Chỉ giữ cụm 4–8 số (đuôi NO), bỏ chuỗi dính quá dài nếu đã có từng đoạn
+      var shortNums = nums.filter(function(n) { return n.length >= 4 && n.length <= 6; });
+      if (!shortNums.length) shortNums = nums.filter(function(n) { return n.length >= 4 && n.length <= 8; });
+      var noLine = shortNums.length ? ('NO trên ảnh: ' + shortNums.join('-')) : '';
+
+      if (remark && shortNums.length) {
+        // Nếu remark đã chứa các số → dùng remark; không thì ghép cả hai
+        var remarkDigits = onlyDigits(remark);
+        var allInRemark = shortNums.every(function(n) { return remarkDigits.indexOf(n) >= 0; });
+        if (allInRemark) return remark.indexOf('NO') === 0 || remark.indexOf('Remark') === 0 ? remark : ('NO trên ảnh: ' + remark.replace(/^NO:\s*/i, ''));
+        return noLine + '\n' + remark;
+      }
+      if (remark) return remark;
+      if (noLine) return noLine;
+      return '';
+    }
+
+    /**
+     * Ghi số NO / nội dung trên ảnh vào ô Ghi chú.
+     * Có số NO thì luôn cập nhật (không bỏ sót).
+     * Đồng thời gợi ý Số cột nếu trống.
+     */
+    function apDungRemarkVaoCot(id, ocrText, force, foundNums) {
+      var noteText = buildNoteFromOcr(ocrText, foundNums);
+      if (noteText) {
+        var curNote = '';
+        try { curNote = localStorage.getItem(LS.note(id)) || ''; } catch (e) {}
+        var curIsAuto = !curNote.trim() || /^NO\b|^Remark\b/i.test(curNote.trim()) || curNote.indexOf('NO trên ảnh') >= 0;
+        if (force || curIsAuto) {
+          // Ghi đè ghi chú tự động cũ bằng nội dung mới đủ hơn
+          safeSetItem(LS.note(id), noteText);
+        } else if (curNote.indexOf(noteText) < 0) {
+          // Đã có ghi chú tay → nối thêm
+          safeSetItem(LS.note(id), curNote.trim() + '\n' + noteText);
+        }
+      }
+      var soCot = extractSoCotTuFromRemark(ocrText || '');
+      if (soCot) {
+        var item = findItem(id);
+        if (item && !(item.soCotTu || '').trim()) {
+          item.soCotTu = soCot;
+          saveItems();
+        }
+      }
+      // Cập nhật ô ghi chú trên màn hình ngay (nếu đang mở)
+      var ta = document.getElementById('note_' + id);
+      if (ta) {
+        try { ta.value = localStorage.getItem(LS.note(id)) || ''; } catch (e) {}
+      }
+      return noteText;
+    }
+
+    /**
+     * OCR ảnh của cột → điền Ghi chú từ số NO trên ảnh → khớp master → gắn công tơ.
+     * Trả về số khách đã gắn.
+     */
+    function ocrVaGhepKhachChoCot(id, photoDataUrl, silent) {
+      return new Promise(function(resolve) {
+        if (!photoDataUrl) { resolve(0); return; }
+        if (!silent) showToast('⏳ Đang đọc số NO trên ảnh...', 'ok');
+        ocrImageDataUrl(photoDataUrl).then(function(text) {
+          var foundNums = extractNoCandidates(text);
+          // 1) Luôn điền Ghi chú từ số NO đọc được (bắt buộc khi có số)
+          var remark = apDungRemarkVaoCot(id, text, true, foundNums);
+
+          // 2) Gắn khách nếu đã nạp Excel
+          if (!masterCongToList.length) {
+            if (!silent) {
+              if (foundNums.length) showToast('✅ Đọc được: ' + foundNums.join(', ') + (remark ? ' → Ghi chú' : '') + ' · nạp Excel để gắn khách', 'ok');
+              else if (remark) showToast('✅ Đã điền Ghi chú từ ảnh', 'ok');
+              else showToast('Không đọc được số NO trên ảnh', 'err');
+            }
+            resolve(0);
+            return;
+          }
+
+          var matched = matchMasterBySuffix(text);
+          if (!matched.length && foundNums.length) {
+            matched = matchMasterBySuffix(foundNums.join(' '));
+          }
+          if (!matched.length) {
+            if (!silent) {
+              if (foundNums.length) {
+                var sample = masterCongToList.slice(0, 3).map(function(c) { return onlyDigits(c.soCongTo).slice(-5); }).filter(Boolean).join(', ');
+                showToast('Đọc: ' + foundNums.join(', ') + (remark ? ' → Ghi chú. ' : ' ') + '— không khớp Excel' + (sample ? ' (VD đuôi: ' + sample + '…)' : ''), 'err');
+              } else {
+                showToast('Không đọc được số NO trên ảnh. Ghi to, rõ 4–5 số cuối rồi bấm lại.', 'err');
+              }
+            }
+            resolve(0);
+            return;
+          }
+          var list = getCongTo(id);
+          var existingKeys = {};
+          list.forEach(function(ct) {
+            existingKeys[(ct.soCongTo || '') + '|' + (ct.maKH || '') + '|' + (ct.sdt || '')] = true;
+          });
+          var added = 0;
+          matched.forEach(function(ct) {
+            var key = (ct.soCongTo || '') + '|' + (ct.maKH || '') + '|' + (ct.sdt || '');
+            if (existingKeys[key]) return;
+            list.push({
+              soCongTo: ct.soCongTo,
+              tenKH: ct.tenKH,
+              maKH: ct.maKH,
+              sdt: ct.sdt,
+              diaChi: ct.diaChi
+            });
+            existingKeys[key] = true;
+            added++;
+          });
+          if (added > 0) {
+            saveCongTo(id, list);
+            if (!silent) showToast('✅ Đọc: ' + foundNums.join(', ') + ' → Ghi chú + gắn ' + added + ' khách', 'ok');
+          } else if (!silent) {
+            showToast('✅ Đọc: ' + foundNums.join(', ') + ' → Ghi chú · khách đã có sẵn', 'ok');
+          }
+          resolve(added);
+        }).catch(function(err) {
+          if (!silent) showToast('Lỗi OCR: ' + (err.message || err), 'err');
+          resolve(0);
+        });
+      });
+    }
+
+    /** OCR tất cả cột đang có ảnh — hữu ích sau khi nạp Excel mới */
+    function ocrTatCaCot() {
+      var targets = [];
+      items.forEach(function(c) {
+        var anhs = getAnh(c.id);
+        if (anhs.length) targets.push(c.id);
+      });
+      if (!targets.length) { showToast('Chưa có cột nào có ảnh', 'err'); return; }
+      if (!masterCongToList.length) {
+        if (!confirm('Chưa nạp Excel danh sách CT.\nVẫn đọc số NO trên ảnh để điền Ghi chú cho ' + targets.length + ' cột?')) return;
+      } else {
+        if (!confirm('Đọc lại số NO trên ảnh của ' + targets.length + ' cột và gắn khách từ Excel?')) return;
+      }
+      showToast('⏳ OCR ' + targets.length + ' cột...', 'ok');
+      var totalAdded = 0;
+      var chain = Promise.resolve();
+      targets.forEach(function(id) {
+        chain = chain.then(function() {
+          var anhs = getAnh(id);
+          var sub = Promise.resolve();
+          anhs.forEach(function(a) {
+            if (!a || !a.data) return;
+            sub = sub.then(function() {
+              return ocrVaGhepKhachChoCot(id, a.data, true).then(function(n) { totalAdded += n; });
+            });
+          });
+          return sub;
+        });
+      });
+      chain.then(function() {
+        refreshView();
+        applyFilters();
+        if (totalAdded > 0) showToast('✅ OCR xong · gắn thêm ' + totalAdded + ' khách', 'ok');
+        else showToast('✅ OCR xong · đã cập nhật Ghi chú' + (masterCongToList.length ? ' (không có khách mới)' : ''), 'ok');
+      });
+    }
+
+    /** Nút bấm thủ công: đọc Remark + NO trên ảnh → Ghi chú + gắn khách */
+    function docNoTrenAnh(id) {
+      var anhs = getAnh(id);
+      if (!anhs.length || !anhs[0].data) {
+        showToast('Cột chưa có ảnh', 'err');
+        return;
+      }
+      showToast('⏳ Đang đọc số NO trên ' + anhs.length + ' ảnh...', 'ok');
+      var totalAdded = 0;
+      var chain = Promise.resolve();
+      anhs.forEach(function(a) {
+        chain = chain.then(function() {
+          return ocrVaGhepKhachChoCot(id, a.data, true).then(function(n) { totalAdded += n; });
+        });
+      });
+      chain.then(function() {
+        refreshView();
+        var note = '';
+        try { note = localStorage.getItem(LS.note(id)) || ''; } catch (e) {}
+        if (totalAdded > 0) {
+          showToast('✅ Ghi chú + gắn ' + totalAdded + ' khách từ ảnh', 'ok');
+        } else if (note) {
+          showToast('✅ Đã điền Ghi chú từ số NO trên ảnh' + (masterCongToList.length ? ' (chưa khớp khách mới)' : ' · nạp Excel để gắn khách'), 'ok');
+        } else {
+          showToast('Không đọc được số NO trên ảnh', 'err');
+        }
+      });
+    }
+
+    /** 1 ảnh = 1 cột/tủ. Chọn nhiều ảnh → tạo nhiều cột, mỗi cột gắn đúng 1 ảnh đó. */
+    function themCotTuAnh(input) {
+      var files = Array.from(input.files || []);
+      if (!files.length) return;
+      var st = document.getElementById('newAnhStatus');
+      if (st) st.textContent = '⏳ Đang tạo ' + files.length + ' cột từ ảnh...';
+      showToast('⏳ Đang xử lý ' + files.length + ' ảnh (1 ảnh = 1 cột)...', 'ok');
+      var baseId = items.length ? Math.max.apply(null, items.map(function(c) { return c.id || 0; })) + 1 : 1;
+      var done = 0, ok = 0;
+      var results = new Array(files.length);
+      function finishOne(idx, photo) {
+        if (photo && photo.data) results[idx] = photo;
+        done++;
+        if (done < files.length) return;
+        var createdIds = [];
+        results.forEach(function(photo) {
+          if (!photo) return;
+          var id = baseId + ok;
+          items.push({ id: id, name: 'Cột ' + id, soCotTu: '', maLo: '', address: '' });
+          saveAnh(id, [photo]);
+          createdIds.push({ id: id, data: photo.data });
+          ok++;
+        });
+        saveItems();
+        refreshView();
+        filterItems(currentFilter || 'all');
+        if (st) st.textContent = ok ? ('✅ Đã thêm ' + ok + ' cột/tủ từ ảnh') : 'Không đọc được ảnh';
+        showToast(ok ? ('✅ Đã thêm ' + ok + ' cột (1 ảnh = 1 cột)') : 'Không đọc được ảnh', ok ? 'ok' : 'err');
+        try { input.value = ''; } catch (e) {}
+        // OCR: luôn đọc số NO → Ghi chú; gắn khách nếu đã nạp Excel
+        if (ok && createdIds.length) {
+          if (st) st.textContent = '⏳ Đang đọc số NO trên ' + createdIds.length + ' ảnh...';
+          showToast('⏳ OCR đang đọc số NO trên ảnh...', 'ok');
+          var totalAdded = 0;
+          var chain = Promise.resolve();
+          createdIds.forEach(function(item) {
+            chain = chain.then(function() {
+              return ocrVaGhepKhachChoCot(item.id, item.data, true).then(function(n) { totalAdded += n; });
+            });
+          });
+          chain.then(function() {
+            refreshView();
+            applyFilters();
+            if (st) {
+              if (totalAdded) st.textContent = '✅ Đã thêm ' + ok + ' cột · gắn ' + totalAdded + ' khách từ OCR';
+              else if (masterCongToList.length) st.textContent = '✅ Đã thêm ' + ok + ' cột · đã đọc NO (chưa khớp khách)';
+              else st.textContent = '✅ Đã thêm ' + ok + ' cột · đã điền Ghi chú từ NO (nạp Excel để gắn khách)';
+            }
+            if (totalAdded) showToast('✅ Gắn ' + totalAdded + ' khách từ OCR', 'ok');
+            else if (masterCongToList.length) showToast('Đã đọc NO · chưa khớp khách trên ảnh', 'ok');
+            else showToast('Đã điền Ghi chú từ số NO — nạp Excel để gắn khách', 'ok');
+          });
+        }
+      }
+      files.forEach(function(f, i) {
+        compressImageFile(f).then(function(photo) { finishOne(i, photo); }).catch(function() { finishOne(i, null); });
+      });
+    }
+    function themViTriMoi() {
+      // Giữ tương thích nếu còn chỗ gọi — tạo cột trống
+      var nextId = items.length ? Math.max.apply(null, items.map(function(c) { return c.id || 0; })) + 1 : 1;
+      items.push({ id: nextId, name: 'Cột ' + nextId, soCotTu: '', maLo: '', address: '' });
+      saveItems();
+      refreshView();
+      showToast('✅ Đã thêm cột trống', 'ok');
+    }
+
+    function capNhatThongTin(id, field, value) {
+      var item = findItem(id);
+      if (!item) return;
+      item[field] = String(value || '').trim();
+      if (field === 'name' && !item.name) item.name = 'Vị trí ' + id;
+      saveItems();
+      if (viewMode === 'card') { renderItems(); applyFilters(); }
+    }
+
+    function setStatusFromSelect(id, sel) {
+      var v = sel.value;
+      if (!v) localStorage.removeItem(LS.status(id));
+      else safeSetItem(LS.status(id), v);
+      sel.className = 'status-select ' + (v === 'du' ? 'st-du' : (v === 'chua' ? 'st-chua' : 'st-xl'));
+      updateStats();
+      applyFilters();
+    }
+    function setStatus(id, status) {
+      var key = LS.status(id);
+      var cur = localStorage.getItem(key);
+      if (cur === status) localStorage.removeItem(key);
+      else safeSetItem(key, status);
+      refreshView();
+      updateStats();
+      applyFilters();
+    }
+    function capNhatGhiChu(id, value) { safeSetItem(LS.note(id), String(value || '')); }
+    function luuGhiChu(id) {
+      var ta = document.getElementById('note_' + id);
+      if (ta) {
+        safeSetItem(LS.note(id), ta.value);
+        var st = document.getElementById('status_note_' + id);
+        if (st) { st.textContent = '✓ Đã lưu'; setTimeout(function() { st.textContent = ''; }, 2000); }
+      }
+    }
+
+    // ===== Công tơ modal =====
+    /** Dán bảng Excel (tab / ; / |) → danh sách công tơ của cột */
+    function parseExcelPasteText(text) {
+      var lines = String(text || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
+      var rows = [];
+      lines.forEach(function(line) {
+        line = line.trim();
+        if (!line) return;
+        var cells;
+        if (line.indexOf('\t') >= 0) cells = line.split('\t');
+        else if (line.indexOf(';') >= 0) cells = line.split(';');
+        else if (line.indexOf('|') >= 0) cells = line.split('|');
+        else cells = [line];
+        cells = cells.map(function(c) { return String(c || '').trim(); });
+        // Bỏ dòng header
+        var joined = cells.join(' ').toLowerCase();
+        if (/tên|ten kh|mã kh|ma kh|sđt|sdt|địa chỉ|dia chi|công tơ|cong to|no\b/.test(joined) && cells.length > 1 && !/\d{6,}/.test(joined)) {
+          return;
+        }
+        rows.push(cells);
+      });
+      return rows;
+    }
+    function mapCellsToCongTo(cells) {
+      // Hỗ trợ nhiều thứ tự cột phổ biến
+      // 5 cột: Tên | Mã KH | Địa chỉ | SĐT | NO
+      // 4 cột: Tên | Địa chỉ | SĐT | NO  hoặc  Tên | Mã KH | SĐT | NO
+      // 3 cột: Tên | SĐT | NO
+      // 1 cột: chỉ tên hoặc chỉ NO
+      var tenKH = '', maKH = '', diaChi = '', sdt = '', soCongTo = '';
+      var n = cells.length;
+      function looksPhone(s) { return /^0\d{8,10}$/.test(String(s).replace(/[\s\-\.]/g, '')) || /^(\+84)\d{8,10}$/.test(String(s).replace(/[\s\-\.]/g, '')); }
+      function looksCode(s) { return /^[A-Za-z]{0,4}\d{4,}$/.test(String(s).replace(/\s/g, '')) || /^PE\d+/i.test(s) || /^KH/i.test(s); }
+      function looksNo(s) { return /^(NO|CT|SC)?[\-\s]?\d{5,}$/i.test(String(s).replace(/\s/g, '')) || (/^\d{6,}$/.test(String(s).replace(/\s/g, '')) && !looksPhone(s)); }
+
+      if (n >= 5) {
+        tenKH = cells[0]; maKH = cells[1]; diaChi = cells[2]; sdt = cells[3]; soCongTo = cells[4];
+      } else if (n === 4) {
+        tenKH = cells[0];
+        if (looksPhone(cells[2])) { maKH = cells[1]; sdt = cells[2]; soCongTo = cells[3]; }
+        else if (looksPhone(cells[1])) { sdt = cells[1]; diaChi = cells[2]; soCongTo = cells[3]; }
+        else { maKH = cells[1]; diaChi = cells[2]; sdt = cells[3]; }
+      } else if (n === 3) {
+        tenKH = cells[0];
+        if (looksPhone(cells[1])) { sdt = cells[1]; soCongTo = cells[2]; }
+        else if (looksPhone(cells[2])) { maKH = cells[1]; sdt = cells[2]; }
+        else { maKH = cells[1]; soCongTo = cells[2]; }
+      } else if (n === 2) {
+        if (looksPhone(cells[1])) { tenKH = cells[0]; sdt = cells[1]; }
+        else if (looksNo(cells[1])) { tenKH = cells[0]; soCongTo = cells[1]; }
+        else { tenKH = cells[0]; maKH = cells[1]; }
+      } else if (n === 1) {
+        if (looksPhone(cells[0])) sdt = cells[0];
+        else if (looksNo(cells[0])) soCongTo = cells[0];
+        else tenKH = cells[0];
+      }
+      // Quét lại nếu SĐT/NO lẫn
+      cells.forEach(function(c) {
+        if (!sdt && looksPhone(c)) sdt = c;
+        if (!soCongTo && looksNo(c) && c !== sdt) soCongTo = c;
+        if (!maKH && looksCode(c) && c !== soCongTo) maKH = c;
+      });
+      if (!tenKH && !maKH && !sdt && !soCongTo && !diaChi) return null;
+      return { tenKH: tenKH, maKH: maKH, diaChi: diaChi, sdt: sdt, soCongTo: soCongTo };
+    }
+    function danExcelVaoCot(id) {
+      var ta = document.getElementById('paste_excel_' + id);
+      if (!ta) return;
+      var text = ta.value || '';
+      if (!text.trim()) { showToast('Chưa có nội dung dán', 'err'); return; }
+      var rows = parseExcelPasteText(text);
+      if (!rows.length) { showToast('Không đọc được dòng nào', 'err'); return; }
+      var list = getCongTo(id);
+      var added = 0;
+      rows.forEach(function(cells) {
+        var ct = mapCellsToCongTo(cells);
+        if (!ct) return;
+        list.push(ct);
+        added++;
+      });
+      if (!added) { showToast('Không nhận diện được khách hàng', 'err'); return; }
+      saveCongTo(id, list);
+      ta.value = '';
+      refreshView();
+      showToast('✅ Đã gắn ' + added + ' khách hàng vào cột', 'ok');
+    }
+    function danExcelTrongModal() {
+      if (_congToTargetId == null) { showToast('Chưa chọn cột', 'err'); return; }
+      var ta = document.getElementById('pasteExcelModal');
+      if (!ta) return;
+      var text = ta.value || '';
+      if (!text.trim()) { showToast('Chưa có nội dung dán', 'err'); return; }
+      var rows = parseExcelPasteText(text);
+      if (!rows.length) { showToast('Không đọc được dòng nào', 'err'); return; }
+      var list = getCongTo(_congToTargetId);
+      var added = 0;
+      rows.forEach(function(cells) {
+        var ct = mapCellsToCongTo(cells);
+        if (!ct) return;
+        list.push(ct);
+        added++;
+      });
+      if (!added) { showToast('Không nhận diện được khách hàng', 'err'); return; }
+      saveCongTo(_congToTargetId, list);
+      ta.value = '';
+      renderCongToModalList();
+      showToast('✅ Đã thêm ' + added + ' khách hàng', 'ok');
+    }
+
+    function moCongToModal(id) {
+      _congToTargetId = id;
+      var item = findItem(id);
+      var title = document.getElementById('congToModalTitle');
+      if (title) title.textContent = '⚡ Công tơ · ' + (item ? (item.soCotTu || item.name || id) : id);
+      var pasteTa = document.getElementById('pasteExcelModal');
+      if (pasteTa) pasteTa.value = '';
+      renderCongToModalList();
+      document.getElementById('modalCongTo').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+    function dongCongToModal() {
+      document.getElementById('modalCongTo').classList.remove('show');
+      document.body.style.overflow = '';
+      _congToTargetId = null;
+      refreshView();
+      applyFilters();
+    }
+    function renderCongToModalList() {
+      var box = document.getElementById('congToListBox');
+      if (!box || _congToTargetId == null) return;
+      var list = getCongTo(_congToTargetId);
+      if (!list.length) {
+        box.innerHTML = '<div style="text-align:center;color:#94a3b8;padding:16px;font-size:13px;">Chưa có công tơ — bấm «Thêm công tơ»</div>';
+        return;
+      }
+      var html = '';
+      list.forEach(function(ct, idx) {
+        var sdtClean = String(ct.sdt || '').replace(/\s/g, '');
+        html += '<div class="congto-card">' +
+          '<div class="ct-row full"><div><label>Tên khách hàng</label><input type="text" value="' + escapeHtml(ct.tenKH || '') + '" placeholder="VD: Nguyễn Văn A" onchange="capNhatCongTo(' + idx + ',\'tenKH\',this.value)"></div></div>' +
+          '<div class="ct-row full"><div><label>Địa chỉ khách hàng</label><input type="text" value="' + escapeHtml(ct.diaChi || '') + '" placeholder="Địa chỉ theo cột…" onchange="capNhatCongTo(' + idx + ',\'diaChi\',this.value)"></div></div>' +
+          '<div class="ct-row">' +
+            '<div><label>SĐT khách hàng</label><input type="tel" inputmode="tel" value="' + escapeHtml(ct.sdt || '') + '" placeholder="09xx..." onchange="capNhatCongTo(' + idx + ',\'sdt\',this.value)"></div>' +
+            '<div style="display:flex;align-items:flex-end;">' +
+              (ct.sdt ? buildContactButtons(ct.sdt, 'modal') : '<span style="font-size:12px;color:#94a3b8;padding:8px;">Nhập SĐT</span>') +
+            '</div>' +
+          '</div>' +
+          '<div class="ct-row">' +
+            '<div><label>NO công tơ</label><input type="text" value="' + escapeHtml(ct.soCongTo || '') + '" placeholder="NO / số công tơ" onchange="capNhatCongTo(' + idx + ',\'soCongTo\',this.value)"></div>' +
+            '<div><label>Mã khách hàng</label><input type="text" value="' + escapeHtml(ct.maKH || '') + '" placeholder="Mã KH" onchange="capNhatCongTo(' + idx + ',\'maKH\',this.value)"></div>' +
+          '</div>' +
+          '<div style="margin-top:8px;"><button type="button" class="btn-del-ct" onclick="xoaCongTo(' + idx + ')">🗑️ Xóa CT này</button></div>' +
+          '</div>';
+      });
+      box.innerHTML = html;
+    }
+    function themCongToMoi() {
+      if (_congToTargetId == null) return;
+      var list = getCongTo(_congToTargetId);
+      list.push({ soCongTo: '', maKH: '', tenKH: '', diaChi: '', sdt: '' });
+      saveCongTo(_congToTargetId, list);
+      renderCongToModalList();
+      showToast('✅ Đã thêm công tơ', 'ok');
+    }
+    function capNhatCongTo(idx, field, value) {
+      if (_congToTargetId == null) return;
+      var list = getCongTo(_congToTargetId);
+      if (idx < 0 || idx >= list.length) return;
+      list[idx][field] = String(value || '').trim();
+      saveCongTo(_congToTargetId, list);
+      if (field === 'sdt') renderCongToModalList();
+    }
+    function xoaCongTo(idx) {
+      if (_congToTargetId == null) return;
+      var list = getCongTo(_congToTargetId);
+      if (idx < 0 || idx >= list.length) return;
+      var ten = list[idx].tenKH || list[idx].soCongTo || ('CT #' + (idx + 1));
+      if (!confirm('Xóa công tơ «' + ten + '»?')) return;
+      list.splice(idx, 1);
+      saveCongTo(_congToTargetId, list);
+      renderCongToModalList();
+      showToast('Đã xóa', 'ok');
+    }
+    function buildCongToSummaryHtml(id) {
+      var list = getCongTo(id);
+      if (!list.length) {
+        return '<div class="congto-summary empty">Chưa có công tơ</div><button type="button" class="btn-congto" onclick="moCongToModal(' + id + ')">⚡ Thêm công tơ</button>';
+      }
+      var names = list.map(function(ct) { return ct.tenKH || ct.soCongTo || ct.maKH || 'CT'; }).slice(0, 3).join(', ');
+      if (list.length > 3) names += '…';
+      return '<div class="congto-summary">✅ ' + list.length + ' công tơ' +
+        (names ? '<br><span style="font-weight:500;font-size:11px;color:#64748b">' + escapeHtml(names) + '</span>' : '') +
+        '</div><button type="button" class="btn-congto" onclick="moCongToModal(' + id + ')">⚡ Quản lý</button>';
+    }
+    function buildCongToCardSection(id) {
+      var list = getCongTo(id);
+      var html = '<div class="congto-list-card"><h4>⚡ Công tơ điện (' + list.length + ')</h4>';
+      if (!list.length) html += '<div style="font-size:12px;color:#94a3b8;margin-bottom:8px;">Chưa gắn công tơ</div>';
+      else {
+        list.forEach(function(ct, idx) {
+          var sdtClean = String(ct.sdt || '').replace(/\s/g, '');
+          html += '<div class="ct-mini">' +
+            '<div class="ct-name">' + escapeHtml(ct.tenKH || ('Công tơ ' + (idx + 1))) +
+            (ct.soCongTo ? ' <span style="font-weight:600;color:#0d9488">· CT ' + escapeHtml(ct.soCongTo) + '</span>' : '') + '</div>' +
+            (ct.maKH ? '<div class="ct-meta">Mã KH: ' + escapeHtml(ct.maKH) + '</div>' : '') +
+            (ct.diaChi ? '<div class="ct-meta">📍 ' + escapeHtml(ct.diaChi) + '</div>' : '') +
+            (ct.sdt ? buildContactButtons(ct.sdt, 'mini') : '') +
+            '</div>';
+        });
+      }
+      html += '<button type="button" class="btn-congto" style="margin-top:6px;" onclick="moCongToModal(' + id + ')">⚡ ' + (list.length ? 'Quản lý công tơ' : 'Thêm công tơ') + '</button></div>';
+      return html;
+    }
+
+    // ===== Table =====
+    function renderTable() {
+      var thead = document.getElementById('excelThead');
+      var tbody = document.getElementById('excelTbody');
+      if (!thead || !tbody) return;
+      thead.innerHTML = '<tr>' +
+        '<th class="col-stt">STT</th><th class="col-name">Tên vị trí</th><th class="col-socot">Số cột / Tủ</th>' +
+        '<th class="col-malo">Mã lộ</th><th class="col-addr">Địa chỉ</th><th class="col-status">Trạng thái</th>' +
+        '<th class="col-congto">⚡ Công tơ</th><th class="col-note">Ghi chú</th>' +
+        '<th class="col-anh">📷 Ảnh</th><th class="col-act">Xóa</th></tr>';
+      var html = '';
+      items.forEach(function(c, idx) {
+        var status = localStorage.getItem(LS.status(c.id)) || '';
+        var note = localStorage.getItem(LS.note(c.id)) || '';
+        var stClass = status === 'du' ? 'st-du' : (status === 'chua' ? 'st-chua' : 'st-xl');
+        var anhs = getAnh(c.id);
+        html += '<tr data-id="' + c.id + '">';
+        html += '<td class="col-stt">' + (idx + 1) + '</td>';
+        html += '<td class="col-name"><input type="text" value="' + escapeHtml(c.name || '') + '" placeholder="Tên" onchange="capNhatThongTin(' + c.id + ',\'name\',this.value)"></td>';
+        html += '<td class="col-socot"><input type="text" value="' + escapeHtml(c.soCotTu || '') + '" placeholder="Cột 12 / Tủ 5" onchange="capNhatThongTin(' + c.id + ',\'soCotTu\',this.value)"></td>';
+        html += '<td class="col-malo"><input type="text" value="' + escapeHtml(c.maLo || '') + '" placeholder="Mã lộ" onchange="capNhatThongTin(' + c.id + ',\'maLo\',this.value)"></td>';
+        html += '<td class="col-addr"><input type="text" value="' + escapeHtml(c.address || '') + '" placeholder="Địa chỉ" onchange="capNhatThongTin(' + c.id + ',\'address\',this.value)">' +
+          '<div class="addr-map-btns">' +
+            '<button type="button" class="btn-map-sm" onclick="moGoogleMaps(' + c.id + ')">📍 Maps</button>' +
+            '<button type="button" class="btn-dir-sm" onclick="chiDuongDenDay(' + c.id + ')">🧭 Chỉ đường</button>' +
+            '<button type="button" class="btn-gps-sm" onclick="layViTriGPS(' + c.id + ')">📡 GPS</button>' +
+          '</div><div class="geo-info" id="geo_info_' + c.id + '">' + formatGeoText(c.id) + '</div></td>';
+        html += '<td class="col-status"><select class="status-select ' + stClass + '" onchange="setStatusFromSelect(' + c.id + ',this)">' +
+          '<option value=""' + (!status ? ' selected' : '') + '>⏳ Chưa XL</option>' +
+          '<option value="du"' + (status === 'du' ? ' selected' : '') + '>✅ Đã HT</option>' +
+          '<option value="chua"' + (status === 'chua' ? ' selected' : '') + '>⚠️ Chưa HT</option></select></td>';
+        html += '<td class="col-congto">' + buildCongToSummaryHtml(c.id) + '</td>';
+        html += '<td class="col-note"><input type="text" value="' + escapeHtml(note) + '" placeholder="Hòm 3 pha · Hòm 1 pha · Cần sửa chữa…" onchange="capNhatGhiChu(' + c.id + ',this.value)"></td>';
+        html += '<td class="col-anh">' + buildTableAnhCell(c.id, anhs) + '</td>';
+        html += '<td class="col-act"><button type="button" class="btn-row-del" onclick="xoaItem(' + c.id + ')">🗑️</button></td>';
+        html += '</tr>';
+      });
+      tbody.innerHTML = html || '<tr><td colspan="10" style="text-align:center;padding:24px;color:#94a3b8">Chưa có vị trí — thêm ở form phía trên</td></tr>';
+      ensureTablePhotoInputs();
+      updateStats();
+      applyFilters();
+    }
+
+    function buildTableAnhCell(id, anhs) {
+      anhs = anhs || [];
+      var s = '';
+      if (!anhs.length) s += '<div class="tbl-anh-empty">📷 Chưa có ảnh</div>';
+      s += '<div class="tbl-anh-wrap" id="tbl_anh_' + id + '">';
+      if (anhs.length) {
+        s += '<div class="tbl-anh-count">✅ ' + anhs.length + ' ảnh</div>';
+        anhs.forEach(function(a, idx) {
+          if (!a || !a.data) return;
+          s += '<div class="tbl-anh-thumb"><img src="' + a.data + '" onclick="xemAnhLon(this.src)"/><button type="button" class="tbl-xoa" onclick="xoaMotAnh(' + id + ',' + idx + ')">×</button></div>';
+        });
+      }
+      s += '</div><div class="tbl-anh-btns">' +
+        '<button type="button" class="btn-gal" onclick="moThuVienBang(' + id + ')">🖼️ Thư viện</button>' +
+        '<button type="button" class="btn-cam" onclick="moChupAnhBang(' + id + ')">📷 Chụp</button></div>';
+      return s;
+    }
+    function ensureTablePhotoInputs() {
+      if (document.getElementById('tableCameraInput')) return;
+      var cam = document.createElement('input');
+      cam.type = 'file'; cam.id = 'tableCameraInput'; cam.accept = 'image/*';
+      cam.setAttribute('capture', 'environment'); cam.className = 'file-hidden';
+      cam.addEventListener('change', function() { if (_tablePhotoTargetId != null) xuLyFile(_tablePhotoTargetId, cam); });
+      var gal = document.createElement('input');
+      gal.type = 'file'; gal.id = 'tableGalleryInput'; gal.accept = 'image/*'; gal.multiple = true; gal.className = 'file-hidden';
+      gal.addEventListener('change', function() { if (_tablePhotoTargetId != null) xuLyFile(_tablePhotoTargetId, gal); });
+      document.body.appendChild(cam); document.body.appendChild(gal);
+    }
+    function moChupAnhBang(id) {
+      _tablePhotoTargetId = id;
+      var i = document.getElementById('tableCameraInput');
+      if (!i) { ensureTablePhotoInputs(); i = document.getElementById('tableCameraInput'); }
+      if (i) { i.value = ''; i.click(); }
+    }
+    function moThuVienBang(id) {
+      _tablePhotoTargetId = id;
+      var i = document.getElementById('tableGalleryInput');
+      if (!i) { ensureTablePhotoInputs(); i = document.getElementById('tableGalleryInput'); }
+      if (i) { i.value = ''; i.click(); }
+    }
+    function xoaMotAnh(id, idx) {
+      var list = getAnh(id);
+      if (idx < 0 || idx >= list.length) return;
+      list.splice(idx, 1);
+      saveAnh(id, list);
+      refreshAnhUI(id);
+      showToast('Đã xóa ảnh', 'ok');
+    }
+    function refreshAnhUI(id) {
+      var cell = document.getElementById('tbl_anh_' + id);
+      if (cell) {
+        var td = cell.closest('td');
+        if (td) td.innerHTML = buildTableAnhCell(id, getAnh(id));
+      }
+      // Dạng thẻ không có #preview_ — phải render lại toàn bộ card
+      if (viewMode === 'card') {
+        renderItems();
+        applyFilters();
+      } else {
+        hienThiPreview(id);
+      }
+    }
+
+    // ===== Card view — bố cục theo sketch: Ảnh cột → Địa chỉ → DS công tơ (Tên·Địa chỉ·SĐT·NO) → Ghi chú =====
+    function renderItems() {
+      var container = document.getElementById('itemList');
+      if (!container) return;
+      container.innerHTML = '';
+      items.forEach(function(c) {
+        var status = localStorage.getItem(LS.status(c.id));
+        var note = localStorage.getItem(LS.note(c.id)) || '';
+        var anhs = getAnh(c.id);
+        var ctList = getCongTo(c.id);
+        var card = document.createElement('div');
+        card.className = 'card';
+        card.setAttribute('data-id', c.id);
+
+        // 1) ẢNH CỘT (trên cùng, to)
+        var anhHtml = '<div style="margin-bottom:14px;">';
+        anhHtml += '<div class="sec-title">📷 Ảnh cột</div>';
+        if (anhs.length) {
+          anhHtml += '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;">';
+          anhs.forEach(function(a, idx) {
+            if (!a || !a.data) return;
+            anhHtml += '<div style="position:relative;width:100%;border-radius:12px;overflow:hidden;border:2px solid #64748b;">' +
+              '<img src="' + a.data + '" style="width:100%;max-height:240px;object-fit:cover;display:block;cursor:pointer;" onclick="xemAnhLon(this.src)"/>' +
+              '<button type="button" onclick="xoaMotAnh(' + c.id + ',' + idx + ')" style="position:absolute;top:8px;right:8px;width:32px;height:32px;border:none;border-radius:50%;background:rgba(220,38,38,.9);color:#fff;font-size:18px;font-weight:800;cursor:pointer;">×</button>' +
+              '</div>';
+          });
+          anhHtml += '</div>';
+        } else {
+          anhHtml += '<div style="padding:32px 12px;text-align:center;background:#e0f2fe;border:2px dashed #0284c7;border-radius:12px;color:#0c4a6e;font-weight:800;font-size:15px;margin-bottom:8px;">Chưa có ảnh cột<br><span style="font-weight:600;font-size:13px;color:#0369a1">Chụp hoặc chọn từ thư viện</span></div>';
+        }
+        anhHtml += '<div class="btn-row" style="margin:0;">' +
+          '<label class="btn purple" for="camera_' + c.id + '" style="cursor:pointer;">📷 Chụp ảnh cột</label>' +
+          '<label class="btn indigo" for="gallery_' + c.id + '" style="cursor:pointer;">🖼️ Thư viện ảnh</label>' +
+          '</div>';
+        anhHtml += '<button type="button" onclick="docNoTrenAnh(' + c.id + ')" style="width:100%;margin-top:8px;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;font-size:14px;font-weight:800;min-height:44px;cursor:pointer;">🔍 Đọc số NO trên ảnh → Ghi chú + gắn khách</button>';
+        anhHtml += '<input type="file" id="camera_' + c.id + '" accept="image/*" capture="environment" class="file-hidden" onchange="xuLyFile(' + c.id + ',this)">' +
+          '<input type="file" id="gallery_' + c.id + '" accept="image/*" multiple class="file-hidden" onchange="xuLyFile(' + c.id + ',this)">';
+        anhHtml += '</div>';
+
+        // 2) SỐ CỘT + ĐỊA CHỈ (tự điền theo ảnh)
+        var infoHtml = '<div style="background:#f1f5f9;border:2px solid #94a3b8;border-radius:12px;padding:14px;margin-bottom:14px;">' +
+          '<div class="sec-title">🏗️ Số cột / tủ & địa chỉ</div>' +
+          '<div style="margin-bottom:10px;"><label class="field-label">Số cột / Số tủ</label>' +
+            '<input class="field-input" type="text" value="' + escapeHtml(c.soCotTu || '') + '" placeholder="VD: Cột 12 · Tủ 5" onchange="capNhatThongTin(' + c.id + ',\'soCotTu\',this.value)"></div>' +
+          '<div style="margin-bottom:10px;"><label class="field-label">Mã lộ</label>' +
+            '<input class="field-input" type="text" value="' + escapeHtml(c.maLo || '') + '" placeholder="Mã lộ (nếu có)" onchange="capNhatThongTin(' + c.id + ',\'maLo\',this.value)"></div>' +
+          '<div style="margin-bottom:10px;"><label class="field-label">Địa chỉ cột</label>' +
+            '<input class="field-input" type="text" value="' + escapeHtml(c.address || '') + '" placeholder="Tự điền địa chỉ…" onchange="capNhatThongTin(' + c.id + ',\'address\',this.value)"></div>' +
+          '<div class="geo-info" id="card_geo_' + c.id + '" style="margin-bottom:8px;font-size:13px;font-weight:700;">' + formatGeoText(c.id) + '</div>' +
+          '<div class="btn-row" style="margin:0;">' +
+            '<button class="btn" type="button" onclick="moGoogleMaps(' + c.id + ')" style="background:linear-gradient(135deg,#2563eb,#3b82f6);">📍 Maps</button>' +
+            '<button class="btn" type="button" onclick="chiDuongDenDay(' + c.id + ')" style="background:linear-gradient(135deg,#ea580c,#f97316);">🧭 Chỉ đường</button>' +
+            '<button class="btn" type="button" onclick="layViTriGPS(' + c.id + ')" style="background:linear-gradient(135deg,#0d9488,#14b8a6);">📡 GPS</button>' +
+          '</div></div>';
+
+        // 2b) TRẠNG THÁI XỬ LÝ
+        var stClass = status === 'du' ? 'st-du' : (status === 'chua' ? 'st-chua' : 'st-xl');
+        var statusHtml = '<div style="background:#fff;border:2px solid #94a3b8;border-radius:12px;padding:12px 14px;margin-bottom:14px;">' +
+          '<div class="sec-title" style="margin-bottom:8px !important;">📌 Trạng thái</div>' +
+          '<select class="status-select ' + stClass + '" style="width:100%;padding:12px 10px !important;font-size:15px !important;border:2px solid #94a3b8 !important;border-radius:10px !important;" onchange="setStatusFromSelect(' + c.id + ',this)">' +
+            '<option value=""' + (!status ? ' selected' : '') + '>⏳ Chưa xử lý</option>' +
+            '<option value="du"' + (status === 'du' ? ' selected' : '') + '>✅ Đã hoàn thành</option>' +
+            '<option value="chua"' + (status === 'chua' ? ' selected' : '') + '>⚠️ Chưa hoàn thành</option>' +
+          '</select></div>';
+
+        // 3) DANH SÁCH CÔNG TƠ / KHÁCH HÀNG (Tên → Địa chỉ → SĐT → NO)
+        var ctHtml = '<div style="background:#ecfdf5;border:2px solid #14b8a6;border-radius:12px;padding:14px;margin-bottom:14px;">' +
+          '<div class="sec-title teal">⚡ Công tơ / Khách hàng trên cột (' + ctList.length + ')</div>';
+        if (!ctList.length) {
+          ctHtml += '<div style="font-size:14px;font-weight:600;color:#64748b;margin-bottom:10px;text-align:center;padding:10px;">Chưa có công tơ — bấm thêm bên dưới</div>';
+        } else {
+          ctList.forEach(function(ct, idx) {
+            var sdtClean = String(ct.sdt || '').replace(/\s/g, '');
+            ctHtml += '<div class="kh-card">' +
+              '<div class="kh-name">' + (idx + 1) + '. ' + escapeHtml(ct.tenKH || ('Khách ' + (idx + 1))) +
+                (ct.soCongTo ? ' <span class="kh-no">· NO ' + escapeHtml(ct.soCongTo) + '</span>' : '') +
+              '</div>' +
+              (ct.diaChi ? '<div class="kh-meta">📍 ' + escapeHtml(ct.diaChi) + '</div>' : '') +
+              (ct.maKH ? '<div class="kh-meta">Mã KH: ' + escapeHtml(ct.maKH) + '</div>' : '') +
+              (ct.sdt ? buildContactButtons(ct.sdt, 'kh') : '') +
+              '</div>';
+          });
+        }
+        ctHtml += '<button type="button" class="btn-congto" style="font-size:15px;min-height:44px;margin-bottom:10px;" onclick="moCongToModal(' + c.id + ')">⚡ ' + (ctList.length ? 'Thêm / Sửa công tơ' : '➕ Thêm công tơ') + '</button>';
+        ctHtml += '<div style="border-top:1px dashed #5eead4;padding-top:10px;margin-top:4px;">' +
+          '<div style="font-size:14px;font-weight:800;color:#0f766e;margin-bottom:6px;">📋 Dán từ Excel vào cột này</div>' +
+          '<div style="font-size:12px;font-weight:600;color:#475569;margin-bottom:6px;line-height:1.4;">Copy dòng KH trên Excel (mỗi dòng 1 khách) rồi dán vào ô dưới.<br>Cột gợi ý: <b>Tên KH · Mã KH · Địa chỉ · SĐT · NO công tơ</b> (cách nhau bằng Tab)<br>Dùng cho: <b>công tơ cấp mới</b> hoặc <b>di chuyển công tơ</b>.</div>' +
+          '<textarea id="paste_excel_' + c.id + '" placeholder="Dán vào đây…&#10;Công tơ cấp mới / Di chuyển công tơ&#10;Tên KH&#9;Mã KH&#9;Địa chỉ&#9;SĐT&#9;NO công tơ" style="width:100%;min-height:90px;padding:12px;border:2px solid #14b8a6;border-radius:10px;font-size:14px;font-weight:600;color:#0f172a;background:#fff;resize:vertical;"></textarea>' +
+          '<button type="button" onclick="danExcelVaoCot(' + c.id + ')" style="width:100%;margin-top:8px;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,#0d9488,#14b8a6);color:#fff;font-size:15px;font-weight:800;min-height:46px;cursor:pointer;">✅ Dán & gắn khách hàng vào cột này</button>' +
+          '</div></div>';
+
+        // 4) GHI CHÚ RIÊNG
+        var noteHtml = '<div class="note-box" style="margin-bottom:12px;">' +
+          '<div class="sec-title">✏️ Ghi chú</div>' +
+          '<textarea id="note_' + c.id + '" placeholder="VD: Hòm 3 pha · Hòm 1 pha · Lưu ý cần sửa chữa…">' + escapeHtml(note) + '</textarea>' +
+          '<div style="margin-top:8px;display:flex;gap:10px;align-items:center;">' +
+            '<button class="btn-save" onclick="luuGhiChu(' + c.id + ')">💾 Lưu ghi chú</button>' +
+            '<span id="status_note_' + c.id + '" style="font-size:13px;color:#047857;font-weight:700;"></span>' +
+          '</div></div>';
+
+        // 5) Xóa cột
+        var footHtml = '<button class="btn red" type="button" style="width:100%;margin-top:4px;" onclick="xoaItem(' + c.id + ')">🗑️ Xóa cột này</button>';
+
+        card.innerHTML = anhHtml + infoHtml + statusHtml + ctHtml + noteHtml + footHtml;
+        container.appendChild(card);
+      });
+      updateStats();
+      applyFilters();
+    }
+
+    // ===== Photos =====
+    function compressImageFile(file) {
+      return new Promise(function(resolve) {
+        var url = URL.createObjectURL(file);
+        var img = new Image();
+        img.onload = function() {
+          try {
+            var maxSide = 1280, w = img.naturalWidth, h = img.naturalHeight, scale = 1;
+            if (w > maxSide || h > maxSide) scale = maxSide / Math.max(w, h);
+            var canvas = document.createElement('canvas');
+            canvas.width = Math.round(w * scale); canvas.height = Math.round(h * scale);
+            canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+            var dataUrl = canvas.toDataURL('image/jpeg', 0.72);
+            if (dataUrl.length > 900 * 1024) dataUrl = canvas.toDataURL('image/jpeg', 0.55);
+            URL.revokeObjectURL(url);
+            resolve({ name: (file.name || 'anh.jpg').replace(/\.[^.]+$/, '') + '.jpg', data: dataUrl, time: new Date().toISOString() });
+          } catch (e) { URL.revokeObjectURL(url); resolve(null); }
+        };
+        img.onerror = function() { URL.revokeObjectURL(url); resolve(null); };
+        img.src = url;
+      });
+    }
+    function xuLyFile(id, input) {
+      var files = Array.from(input.files || []);
+      if (!files.length) return;
+      showToast('⏳ Đang xử lý ' + files.length + ' ảnh...', 'ok');
+      var existing = getAnh(id), done = 0, ok = 0;
+      var newPhotos = [];
+      function finish() {
+        done++;
+        if (done < files.length) return;
+        if (ok > 0 && saveAnh(id, existing)) {
+          refreshAnhUI(id);
+          showToast('✅ Đã lưu ' + ok + ' ảnh', 'ok');
+          // OCR ảnh mới — luôn đọc số NO vào Ghi chú; gắn khách nếu đã nạp Excel
+          if (newPhotos.length) {
+            showToast('⏳ OCR đang đọc số NO trên ảnh...', 'ok');
+            var totalAdded = 0;
+            var chain = Promise.resolve();
+            newPhotos.forEach(function(data) {
+              chain = chain.then(function() {
+                return ocrVaGhepKhachChoCot(id, data, true).then(function(n) { totalAdded += n; });
+              });
+            });
+            chain.then(function() {
+              refreshView();
+              applyFilters();
+              if (totalAdded > 0) showToast('✅ Gắn ' + totalAdded + ' khách từ OCR', 'ok');
+              else if (masterCongToList.length) showToast('Đã đọc NO · chưa khớp khách mới', 'ok');
+              else showToast('Đã điền Ghi chú từ số NO (nạp Excel để gắn khách)', 'ok');
+            });
+          }
+        }
+        try { input.value = ''; } catch (e) {}
+      }
+      files.forEach(function(f) {
+        compressImageFile(f).then(function(item) {
+          if (item && item.data) { existing.push(item); newPhotos.push(item.data); ok++; }
+          finish();
+        }).catch(finish);
+      });
+    }
+    function hienThiPreview(id) {
+      var container = document.getElementById('preview_' + id);
+      if (!container) return;
+      var anhs = getAnh(id);
+      container.innerHTML = '';
+      anhs.forEach(function(f, idx) {
+        var wrap = document.createElement('div');
+        wrap.className = 'preview-item';
+        if (f.data) {
+          var img = document.createElement('img');
+          img.src = f.data;
+          img.onclick = function() { xemAnhLon(f.data); };
+          wrap.appendChild(img);
+        }
+        var btn = document.createElement('button');
+        btn.className = 'btn-xoa-file'; btn.type = 'button'; btn.textContent = '×';
+        btn.onclick = function(ev) {
+          ev.stopPropagation();
+          var list = getAnh(id); list.splice(idx, 1); saveAnh(id, list); hienThiPreview(id);
+        };
+        wrap.appendChild(btn);
+        container.appendChild(wrap);
+      });
+    }
+    function moChupAnh(id) {
+      var i = document.getElementById('camera_' + id);
+      if (i) { i.value = ''; i.click(); }
+    }
+    function moThuVien(id) {
+      var i = document.getElementById('gallery_' + id);
+      if (i) { i.value = ''; i.click(); }
+    }
+    function xoaTatCaAnh(id) {
+      var anhs = getAnh(id);
+      if (!anhs.length) { showToast('Không có ảnh', 'err'); return; }
+      if (!confirm('Xóa toàn bộ ' + anhs.length + ' ảnh?')) return;
+      localStorage.removeItem(LS.anh(id));
+      refreshAnhUI(id);
+      showToast('Đã xóa ảnh', 'ok');
+    }
+    function xemAnhLon(src) {
+      var box = document.getElementById('imgLightbox');
+      var img = document.getElementById('imgLightboxImg');
+      if (!box || !img) return;
+      img.src = src;
+      box.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+    function dongLightbox() {
+      document.getElementById('imgLightbox').classList.remove('show');
+      document.getElementById('imgLightboxImg').removeAttribute('src');
+      document.body.style.overflow = '';
+    }
+
+    // ===== GPS / Maps =====
+    function moGoogleMaps(id) {
+      var item = findItem(id);
+      if (!item) return;
+      var g = getGeo(id);
+      var url = g
+        ? 'https://www.google.com/maps?q=' + encodeURIComponent(g.lat + ',' + g.lng)
+        : 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent([item.name, item.soCotTu, item.address].filter(Boolean).join(' ') || 'Việt Nam');
+      window.open(url, '_blank');
+      showToast('📍 Đang mở Google Maps...', 'ok');
+    }
+    function chiDuongDenDay(id) {
+      var item = findItem(id);
+      if (!item) return;
+      var g = getGeo(id);
+      var dest = g ? (g.lat + ',' + g.lng) : [item.name, item.soCotTu, item.address].filter(Boolean).join(' ');
+      if (!dest) { showToast('Chưa có địa chỉ / tọa độ', 'err'); return; }
+      window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(dest) + '&travelmode=driving', '_blank');
+      showToast('🧭 Đang mở chỉ đường...', 'ok');
+    }
+    function layViTriGPS(id) {
+      if (!navigator.geolocation) { showToast('Thiết bị không hỗ trợ GPS', 'err'); return; }
+      showToast('⏳ Đang lấy GPS...', 'ok');
+      navigator.geolocation.getCurrentPosition(function(pos) {
+        var geo = { lat: pos.coords.latitude, lng: pos.coords.longitude, accuracy: pos.coords.accuracy, time: new Date().toISOString() };
+        if (saveGeo(id, geo)) {
+          var el = document.getElementById('geo_info_' + id);
+          if (el) el.innerHTML = formatGeoText(id);
+          var cel = document.getElementById('card_geo_' + id);
+          if (cel) cel.innerHTML = formatGeoText(id);
+          showToast('✅ Đã lưu GPS (±' + Math.round(geo.accuracy || 0) + 'm)', 'ok');
+        }
+      }, function(err) {
+        showToast(err.code === 1 ? 'Từ chối quyền vị trí' : 'Không lấy được GPS', 'err');
+      }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+    }
+
+    // ===== Filter / Search =====
+    function updateStats() {
+      var du = 0, chua = 0, chuaXl = 0, ct = 0;
+      items.forEach(function(c) {
+        var s = localStorage.getItem(LS.status(c.id));
+        if (s === 'du') du++; else if (s === 'chua') chua++; else chuaXl++;
+        ct += getCongTo(c.id).length;
+      });
+      var el = function(id) { return document.getElementById(id); };
+      if (el('stat-total')) el('stat-total').textContent = items.length;
+      if (el('stat-du')) el('stat-du').textContent = du;
+      if (el('stat-chua')) el('stat-chua').textContent = chua;
+      if (el('stat-chua-xl')) el('stat-chua-xl').textContent = chuaXl;
+      if (el('stat-ct')) el('stat-ct').textContent = ct;
+    }
+    function filterItems(filter) {
+      currentFilter = filter;
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active', 'du', 'chua', 'chua-xl'); });
+      var btn = document.getElementById('filter-' + (filter === 'all' ? 'all' : filter));
+      if (btn) {
+        btn.classList.add('active');
+        if (filter === 'du') btn.classList.add('du');
+        if (filter === 'chua') btn.classList.add('chua');
+        if (filter === 'chua-xl') btn.classList.add('chua-xl');
+      }
+      applyFilters();
+    }
+    function timKiem() {
+      currentSearch = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+      applyFilters();
+    }
+    function xoaTimKiem() {
+      document.getElementById('searchInput').value = '';
+      currentSearch = '';
+      applyFilters();
+    }
+    function matchItem(id, item) {
+      var status = localStorage.getItem(LS.status(id));
+      var matchFilter = currentFilter === 'all' ||
+        (currentFilter === 'du' && status === 'du') ||
+        (currentFilter === 'chua' && status === 'chua') ||
+        (currentFilter === 'chua-xl' && !status);
+      if (!matchFilter) return false;
+      if (!currentSearch) return true;
+      var hay = [
+        item.name, item.soCotTu, item.maLo, item.address,
+        localStorage.getItem(LS.note(id))
+      ].join(' ').toLowerCase();
+      getCongTo(id).forEach(function(ct) {
+        hay += ' ' + [ct.soCongTo, ct.tenKH, ct.maKH, ct.sdt, ct.diaChi].join(' ').toLowerCase();
+      });
+      return hay.indexOf(currentSearch) >= 0;
+    }
+    function applyFilters() {
+      document.querySelectorAll('.card[data-id]').forEach(function(card) {
+        var id = card.getAttribute('data-id');
+        var item = items.find(function(c) { return String(c.id) === String(id); });
+        card.classList.toggle('hidden', !item || !matchItem(id, item));
+      });
+      document.querySelectorAll('#excelTbody tr[data-id]').forEach(function(tr) {
+        var id = tr.getAttribute('data-id');
+        var item = items.find(function(c) { return String(c.id) === String(id); });
+        tr.classList.toggle('row-hidden', !item || !matchItem(id, item));
+      });
+    }
+
+    // ===== Delete =====
+    function xoaItem(id) {
+      var item = findItem(id);
+      if (!confirm('Xóa "' + (item ? item.name : 'vị trí') + '"?\nCông tơ, ảnh, ghi chú sẽ mất.')) return;
+      localStorage.removeItem(LS.note(id));
+      localStorage.removeItem(LS.status(id));
+      localStorage.removeItem(LS.anh(id));
+      localStorage.removeItem(LS.geo(id));
+      localStorage.removeItem(LS.congto(id));
+      items = items.filter(function(c) { return !sameId(c.id, id); });
+      saveItems();
+      refreshView();
+      showToast('Đã xóa', 'ok');
+    }
+    /** Xóa sạch toàn bộ cột/ảnh/công tơ/ghi chú trên màn hình (không đụng file đã lưu trong Files) */
+    function clearAllLocalData(opts) {
+      opts = opts || {};
+      items.forEach(function(c) {
+        try {
+          localStorage.removeItem(LS.note(c.id));
+          localStorage.removeItem(LS.status(c.id));
+          localStorage.removeItem(LS.anh(c.id));
+          localStorage.removeItem(LS.geo(c.id));
+          localStorage.removeItem(LS.congto(c.id));
+        } catch (e) {}
+      });
+      try { localStorage.removeItem(LS.items); } catch (e) {}
+      items = [];
+      if (opts.clearTba) {
+        try { localStorage.removeItem(LS.tenTba); } catch (e) {}
+        try { localStorage.removeItem(LS.anhTram); } catch (e) {}
+        try { localStorage.removeItem(LS.geoTram); } catch (e) {}
+        taiTenTBA();
+        hienThiAnhVaGPSTram();
+      }
+      if (opts.clearMaster) {
+        masterCongToList = [];
+        try { localStorage.removeItem(LS.masterList); } catch (e) {}
+        updateMasterListStatus();
+      }
+      saveItems();
+      refreshView();
+      hienThiLanLuuCuoi();
+    }
+    function xoaDanhSach() {
+      if (!items.length && !getTenTBA()) { showToast('Danh sách trống', 'err'); return; }
+      var n = items.length;
+      if (!confirm('Xóa TOÀN BỘ ' + n + ' cột/ảnh trên màn hình?\n\n• Ảnh, công tơ, ghi chú sẽ mất\n• File đã lưu trong Files vẫn giữ nguyên')) return;
+      clearAllLocalData({ clearTba: false, clearMaster: false });
+      showToast('✅ Đã xóa hết cột/ảnh trên màn hình — có thể up trạm khác', 'ok');
+    }
+
+    // ===== Snapshot / Export =====
+    function collectFullSnapshot() {
+      var byId = {};
+      items.forEach(function(c) {
+        byId[c.id] = {
+          status: localStorage.getItem(LS.status(c.id)) || null,
+          note: localStorage.getItem(LS.note(c.id)) || '',
+          anhs: getAnh(c.id),
+          geo: getGeo(c.id),
+          congTo: getCongTo(c.id)
+        };
+      });
+      return {
+        version: 3,
+        app: 'HDT-quan-ly-0983666086',
+        exportedAt: new Date().toISOString(),
+        tenTBA: getTenTBA(),
+        anhTram: getAnhTram(),
+        geoTram: getGeoTram(),
+        masterCongToList: masterCongToList.slice(),
+        items: items.map(function(c) {
+          return { id: c.id, name: c.name || '', soCotTu: c.soCotTu || '', maLo: c.maLo || '', address: c.address || '' };
+        }),
+        byId: byId
+      };
+    }
+    function applySnapshot(snap) {
+      if (!snap || !snap.items) { showToast('File không hợp lệ', 'err'); return false; }
+      // Xóa sạch dữ liệu trạm cũ trước khi nạp trạm mới — tránh đè ảnh/cột
+      clearAllLocalData({ clearTba: true, clearMaster: true });
+      if (snap.tenTBA != null) { safeSetItem(LS.tenTba, snap.tenTBA || ''); taiTenTBA(); }
+      // Ảnh + GPS trạm
+      if (snap.anhTram && snap.anhTram.data) saveAnhTram(snap.anhTram);
+      else saveAnhTram(null);
+      if (snap.geoTram && typeof snap.geoTram.lat === 'number') saveGeoTram(snap.geoTram);
+      else saveGeoTram(null);
+      hienThiAnhVaGPSTram();
+      // Khôi phục danh sách Excel công tơ toàn trạm (nếu có trong file lưu)
+      if (Array.isArray(snap.masterCongToList) && snap.masterCongToList.length) {
+        masterCongToList = snap.masterCongToList.map(function(ct) {
+          return {
+            soCongTo: ct.soCongTo || '',
+            tenKH: ct.tenKH || '',
+            maKH: ct.maKH || '',
+            sdt: ct.sdt || '',
+            diaChi: ct.diaChi || ''
+          };
+        });
+        saveMasterList();
+      } else {
+        masterCongToList = [];
+        try { localStorage.removeItem(LS.masterList); } catch (e) {}
+      }
+      updateMasterListStatus();
+      snap.items.forEach(function(it) {
+        var nid = (typeof it.id === 'number' && !isNaN(it.id)) ? it.id : parseInt(it.id, 10);
+        if (isNaN(nid)) nid = it.id;
+        items.push({ id: nid, name: it.name || '', soCotTu: it.soCotTu || '', maLo: it.maLo || '', address: it.address || '' });
+      });
+      saveItems();
+      var byId = snap.byId || {};
+      Object.keys(byId).forEach(function(id) {
+        var d = byId[id];
+        if (!d) return;
+        // Giữ cùng key localStorage (chuỗi) — id số hay chuỗi đều thành string key
+        if (d.status) safeSetItem(LS.status(id), d.status);
+        if (d.note) safeSetItem(LS.note(id), d.note);
+        if (d.anhs && d.anhs.length) safeSetItem(LS.anh(id), JSON.stringify(d.anhs));
+        if (d.geo) saveGeo(id, d.geo);
+        if (d.congTo && d.congTo.length) saveCongTo(id, d.congTo);
+      });
+      refreshView();
+      hienThiLanLuuCuoi();
+      return true;
+    }
+    function downloadBlob(blob, fileName) {
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = fileName;
+      document.body.appendChild(a); a.click();
+      setTimeout(function() { try { document.body.removeChild(a); URL.revokeObjectURL(url); } catch (e) {} }, 800);
+    }
+    /** Lưu tệp vào Files trên iPhone (Share → Lưu vào Tệp) — mỗi trạm 1 file */
+    function luuBanSao() {
+      if (!items.length) { showToast('Chưa có cột nào để lưu', 'err'); return; }
+      var tenRaw = (getTenTBA() || '').trim();
+      if (!tenRaw) {
+        var nhap = prompt('Nhập tên trạm biến áp để lưu (mỗi trạm 1 file riêng):', '');
+        if (nhap == null) return;
+        tenRaw = String(nhap || '').trim();
+        if (!tenRaw) { showToast('Cần tên trạm để phân biệt file', 'err'); return; }
+        safeSetItem(LS.tenTba, tenRaw);
+        taiTenTBA();
+      }
+      var snap = collectFullSnapshot();
+      var stamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+      var tenSafe = tenRaw.replace(/[^\w\u00C0-\u024F\u1E00-\u1EFF\- ]+/g, '').trim().replace(/\s+/g, '_');
+      var fname = 'HDT_' + tenSafe + '_' + stamp + '.json';
+      var jsonStr = JSON.stringify(snap);
+      var blob = new Blob([jsonStr], { type: 'application/json' });
+      var file = null;
+      try {
+        file = new File([blob], fname, { type: 'application/json' });
+      } catch (e) { file = null; }
+
+      function markSaved() {
+        try { localStorage.setItem(LS.lastBackup, new Date().toISOString()); } catch (e) {}
+        hienThiLanLuuCuoi();
+      }
+
+      // iOS / Android: Share Sheet → chọn "Lưu vào Tệp" / Files
+      if (file && navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+        navigator.share({
+          files: [file],
+          title: 'HDT · ' + tenRaw,
+          text: 'Bản lưu trạm ' + tenRaw + ' — mở lại bằng «Mở trạm đã lưu»'
+        }).then(function() {
+          markSaved();
+          showToast('✅ Trạm «' + tenRaw + '» · Chọn «Lưu vào Tệp» trên máy', 'ok');
+        }).catch(function(err) {
+          if (err && err.name === 'AbortError') {
+            showToast('Đã hủy chia sẻ', 'err');
+            return;
+          }
+          downloadBlob(blob, fname);
+          markSaved();
+          showToast('✅ Đã tải file trạm «' + tenRaw + '»', 'ok');
+        });
+        return;
+      }
+      downloadBlob(blob, fname);
+      markSaved();
+      showToast('✅ Đã tải file trạm «' + tenRaw + '» · Giữ trong Files', 'ok');
+    }
+
+    /** Xóa màn hình hiện tại để bắt đầu nhập trạm khác (không xóa file đã lưu) */
+    function batDauTramMoi() {
+      var ten = getTenTBA();
+      var msg = 'Bắt đầu trạm mới?\n\n• Xóa hết cột, ảnh, công tơ trên màn hình\n• Xóa cả danh sách Excel CT đang nạp\n• File đã lưu trong Files vẫn giữ nguyên\n' +
+        (ten ? '• Trạm hiện tại: ' + ten : '');
+      if (!confirm(msg)) return;
+      clearAllLocalData({ clearTba: true, clearMaster: true });
+      showToast('🆕 Đã xóa sạch — đặt tên trạm mới rồi up ảnh', 'ok');
+      var el = document.getElementById('tenTBA');
+      if (el) { el.focus(); }
+    }
+    function hienThiLanLuuCuoi() {
+      var el = document.getElementById('lastSaveInfo');
+      if (!el) return;
+      try {
+        var ten = getTenTBA();
+        var t = localStorage.getItem(LS.lastBackup);
+        var parts = [];
+        if (ten) parts.push('Trạm: ' + ten);
+        if (t) parts.push('Lưu gần nhất: ' + new Date(t).toLocaleString('vi-VN'));
+        else parts.push('Chưa lưu tệp — bấm «Lưu tệp trạm này» khi làm xong');
+        el.textContent = (t ? '✅ ' : '⚠️ ') + parts.join(' · ');
+      } catch (e) { el.textContent = ''; }
+    }
+    function exportDanhSach() {
+      if (!items.length) { showToast('Danh sách trống', 'err'); return; }
+      if (typeof XLSX === 'undefined') { showToast('Thư viện Excel chưa sẵn sàng', 'err'); return; }
+      var tenTBA = getTenTBA();
+      var rows = items.map(function(c) {
+        var status = localStorage.getItem(LS.status(c.id));
+        var statusText = status === 'du' ? 'Đã hoàn thành' : (status === 'chua' ? 'Chưa hoàn thành' : 'Chưa xử lý');
+        var note = localStorage.getItem(LS.note(c.id)) || '';
+        var geo = getGeo(c.id);
+        var ctList = getCongTo(c.id);
+        return {
+          'STT': c.id,
+          'Tên trạm biến áp': tenTBA,
+          'Tên vị trí': c.name || '',
+          'Số cột / Số tủ': c.soCotTu || '',
+          'Mã lộ': c.maLo || '',
+          'Địa chỉ': c.address || '',
+          'Vĩ độ': geo ? geo.lat : '',
+          'Kinh độ': geo ? geo.lng : '',
+          'Trạng thái': statusText,
+          'Ghi chú': note,
+          'Số công tơ': ctList.length,
+          'Công tơ (tóm tắt)': ctList.map(function(ct) {
+            return [ct.soCongTo, ct.tenKH, ct.maKH, ct.sdt, ct.diaChi].filter(Boolean).join(' | ');
+          }).join(' ;; ')
+        };
+      });
+      var wb = XLSX.utils.book_new();
+      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(rows), 'CotTu');
+      var ctRows = [];
+      items.forEach(function(c) {
+        getCongTo(c.id).forEach(function(ct, i) {
+          ctRows.push({
+            'STT vị trí': c.id,
+            'Tên vị trí': c.name || '',
+            'Số cột / Số tủ': c.soCotTu || '',
+            'Mã lộ': c.maLo || '',
+            'STT CT': i + 1,
+            'Số công tơ': ct.soCongTo || '',
+            'Tên khách hàng': ct.tenKH || '',
+            'Mã khách hàng': ct.maKH || '',
+            'Địa chỉ KH': ct.diaChi || '',
+            'Số điện thoại': ct.sdt || ''
+          });
+        });
+      });
+      if (ctRows.length) XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(ctRows), 'CongToKH');
+      XLSX.writeFile(wb, 'HDT_quan_ly_tram_0983666086_' + new Date().toISOString().slice(0, 10) + '.xlsx');
+      showToast('✅ Đã xuất Excel', 'ok');
+    }
+
+    // ===== Import =====
+    function importSnapshotFromText(text) {
+      try {
+        var t = String(text || '').trim();
+        var snap = t.charAt(0) === '{' ? JSON.parse(t) : null;
+        if (!snap) {
+          var m = t.match(/var\s+SNAP\s*=\s*(\{[\s\S]*?\})\s*;/);
+          if (m) snap = JSON.parse(m[1]);
+        }
+        if (!snap || !snap.items) throw new Error('Không tìm thấy dữ liệu');
+        var tenMoi = snap.tenTBA || '';
+        if (items.length) {
+          var ok = confirm(
+            'Mở trạm' + (tenMoi ? ' «' + tenMoi + '»' : '') + '?\n\n' +
+            '• Xóa hết cột/ảnh trạm đang mở trên màn hình\n' +
+            '• Nạp dữ liệu từ file (không đè lên nhau)\n' +
+            '• File đã lưu khác trong Files vẫn giữ nguyên'
+          );
+          if (!ok) return;
+        }
+        if (applySnapshot(snap)) {
+          var ten = snap.tenTBA || getTenTBA() || '';
+          showToast('✅ Đã mở trạm' + (ten ? ' «' + ten + '»' : '') + ' · ' + snap.items.length + ' cột/tủ (đã xóa dữ liệu cũ)', 'ok');
+        }
+      } catch (err) {
+        showToast('Lỗi đọc file: ' + (err.message || err), 'err');
+      }
+    }
+    function importDanhSach(input) {
+      var file = input.files && input.files[0];
+      if (!file) return;
+      var name = (file.name || '').toLowerCase();
+      var type = (file.type || '').toLowerCase();
+      var isExcel = /\.(xlsx|xls|csv)$/i.test(name);
+      var isSnap = /\.(json|html|htm)$/i.test(name) || type.indexOf('json') >= 0 || type.indexOf('html') >= 0 || !isExcel;
+      // Tệp Lưu tệp (.json) — khôi phục đủ ảnh + cột + công tơ + ghi chú
+      if (isSnap) {
+        var readerSnap = new FileReader();
+        readerSnap.onload = function(e) {
+          var text = e.target.result || '';
+          if (String(text).trim().charAt(0) === '{' || /var\s+SNAP\s*=/.test(text)) {
+            importSnapshotFromText(text);
+          } else {
+            showToast('Tệp không đúng định dạng lưu app (.json)', 'err');
+          }
+          try { input.value = ''; } catch (ex) {}
+        };
+        readerSnap.onerror = function() { showToast('Không đọc được tệp', 'err'); };
+        readerSnap.readAsText(file, 'UTF-8');
+        return;
+      }
+      if (typeof XLSX === 'undefined') { showToast('Thư viện Excel chưa sẵn sàng', 'err'); return; }
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          var wb = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
+          var sheet = wb.Sheets[wb.SheetNames[0]];
+          var json = XLSX.utils.sheet_to_json(sheet, { defval: '' });
+          if (!json.length) { showToast('File trống', 'err'); return; }
+          function findCol(row, names) {
+            var keys = Object.keys(row);
+            for (var i = 0; i < names.length; i++) {
+              var target = names[i].toLowerCase().replace(/\s/g, '');
+              var found = keys.find(function(k) {
+                var nk = String(k).toLowerCase().replace(/\s/g, '');
+                return nk.indexOf(target) >= 0 || target.indexOf(nk) >= 0;
+              });
+              if (found && String(row[found]).trim()) return String(row[found]).trim();
+            }
+            return '';
+          }
+          if (items.length && !confirm('Thay thế danh sách hiện tại?')) return;
+          items.forEach(function(c) {
+            localStorage.removeItem(LS.note(c.id));
+            localStorage.removeItem(LS.status(c.id));
+            localStorage.removeItem(LS.anh(c.id));
+            localStorage.removeItem(LS.geo(c.id));
+            localStorage.removeItem(LS.congto(c.id));
+          });
+          items = json.map(function(row, idx) {
+            return {
+              id: idx + 1,
+              name: findCol(row, ['tên vị trí', 'ten vi tri', 'tên', 'name']) || ('Vị trí ' + (idx + 1)),
+              soCotTu: findCol(row, ['số cột', 'so cot', 'số tủ', 'so tu', 'số cột / số tủ']),
+              maLo: findCol(row, ['mã lộ', 'ma lo', 'mã']),
+              address: findCol(row, ['địa chỉ', 'dia chi', 'address'])
+            };
+          });
+          saveItems();
+          refreshView();
+          showToast('✅ Đã tải ' + items.length + ' vị trí', 'ok');
+        } catch (err) {
+          showToast('Lỗi: ' + (err.message || err), 'err');
+        }
+        try { input.value = ''; } catch (ex) {}
+      };
+      reader.readAsArrayBuffer(file);
+    }
+
+    // ===== Zalo =====
+    function taoNoiDungChiaSe() {
+      var tenTBA = getTenTBA();
+      var lines = ['📋 HDT quản lý trạm 0983666086 · Cột/Tủ & Công tơ KH'];
+      if (tenTBA) lines.push('⚡ TBA: ' + tenTBA);
+      lines.push('Thời gian: ' + new Date().toLocaleString('vi-VN'));
+      lines.push('Tổng vị trí: ' + items.length);
+      lines.push('────────────────────');
+      items.forEach(function(c, idx) {
+        var status = localStorage.getItem(LS.status(c.id));
+        var st = status === 'du' ? '✅' : (status === 'chua' ? '⚠️' : '⏳');
+        lines.push('');
+        lines.push((idx + 1) + '. ' + (c.name || '') + (c.soCotTu ? ' · ' + c.soCotTu : '') + (c.maLo ? ' [' + c.maLo + ']' : '') + ' ' + st);
+        if (c.address) lines.push('   📍 ' + c.address);
+        var note = localStorage.getItem(LS.note(c.id));
+        if (note) lines.push('   ✏️ ' + note);
+        var ctList = getCongTo(c.id);
+        if (ctList.length) {
+          lines.push('   ⚡ Công tơ (' + ctList.length + '):');
+          ctList.forEach(function(ct, ci) {
+            var line = '      ' + (ci + 1) + ') ' + (ct.soCongTo || '—');
+            if (ct.tenKH) line += ' · ' + ct.tenKH;
+            if (ct.maKH) line += ' [' + ct.maKH + ']';
+            if (ct.sdt) line += ' · 📞 ' + ct.sdt;
+            if (ct.diaChi) line += ' · ' + ct.diaChi;
+            lines.push(line);
+          });
+        }
+      });
+      lines.push('', '────────────────────', 'Gửi từ app HDT quản lý trạm 0983666086');
+      return lines.join('\n');
+    }
+    function toggleZaloPanel(force) {
+      var p = document.getElementById('zaloPanel');
+      if (force === false) { p.style.display = 'none'; return; }
+      p.style.display = (p.style.display === 'none' || !p.style.display) ? 'block' : 'none';
+    }
+    function saoChepNoiDungZalo() {
+      var text = taoNoiDungChiaSe();
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta);
+        showToast('✓ Đã copy — dán vào Zalo', 'ok');
+      } catch (e) { showToast('Không copy được', 'err'); }
+    }
+    function chiaSeTextZalo() {
+      var text = taoNoiDungChiaSe();
+      if (navigator.share) {
+        navigator.share({ title: 'HDT quản lý trạm 0983666086', text: text }).then(function() {
+          showToast('✅ Đã gửi', 'ok'); toggleZaloPanel(false);
+        }).catch(function() { saoChepNoiDungZalo(); });
+      } else saoChepNoiDungZalo();
+    }
+    function chiaSeExcelZalo() {
+      if (!items.length) { showToast('Danh sách trống', 'err'); return; }
+      exportDanhSach();
+      showToast('✅ Đã tải Excel — mở Zalo đính kèm gửi', 'ok');
+      toggleZaloPanel(false);
+    }
+
+    function moHuongDan() {
+      document.getElementById('modalHuongDan').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+    function dongHuongDan() {
+      document.getElementById('modalHuongDan').classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    // Init
+    document.getElementById('fileImport').addEventListener('change', function() {
+      if (this.files && this.files[0]) importDanhSach(this);
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      loadItems();
+      loadMasterList();
+      taiTenTBA();
+      hienThiAnhVaGPSTram();
+      try {
+        var v = localStorage.getItem(LS.view);
+        if (v === 'card' || v === 'table') viewMode = v;
+      } catch (e) {}
+      setViewMode(viewMode);
+      hienThiLanLuuCuoi();
+      var el = document.getElementById('importStatus');
+      if (el) { el.textContent = '✅ Sẵn sàng'; el.style.color = '#059669'; el.style.fontWeight = '600'; }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key !== 'Escape') return;
+      if (document.getElementById('imgLightbox').classList.contains('show')) { dongLightbox(); return; }
+      if (document.getElementById('modalCongTo').classList.contains('show')) { dongCongToModal(); return; }
+      if (document.getElementById('modalHuongDan').classList.contains('show')) { dongHuongDan(); return; }
+    });
+
+    window.xuLyAnhTram = xuLyAnhTram;
+    window.xoaAnhTram = xoaAnhTram;
+    window.layGPSTram = layGPSTram;
+    window.moMapsTram = moMapsTram;
+    window.chiDuongTram = chiDuongTram;
+    window.themViTriMoi = themViTriMoi;
+    window.themCotTuAnh = themCotTuAnh;
+    window.importMasterExcel = importMasterExcel;
+    window.xoaMasterList = xoaMasterList;
+    window.docNoTrenAnh = docNoTrenAnh;
+    window.ocrTatCaCot = ocrTatCaCot;
+    window.danExcelVaoCot = danExcelVaoCot;
+    window.danExcelTrongModal = danExcelTrongModal;
+    window.capNhatThongTin = capNhatThongTin;
+    window.setStatusFromSelect = setStatusFromSelect;
+    window.setStatus = setStatus;
+    window.capNhatGhiChu = capNhatGhiChu;
+    window.luuGhiChu = luuGhiChu;
+    window.moCongToModal = moCongToModal;
+    window.dongCongToModal = dongCongToModal;
+    window.themCongToMoi = themCongToMoi;
+    window.capNhatCongTo = capNhatCongTo;
+    window.xoaCongTo = xoaCongTo;
+    window.moChupAnhBang = moChupAnhBang;
+    window.moThuVienBang = moThuVienBang;
+    window.xoaMotAnh = xoaMotAnh;
+    window.moChupAnh = moChupAnh;
+    window.moThuVien = moThuVien;
+    window.xuLyFile = xuLyFile;
+    window.xoaTatCaAnh = xoaTatCaAnh;
+    window.xemAnhLon = xemAnhLon;
+    window.dongLightbox = dongLightbox;
+    window.moGoogleMaps = moGoogleMaps;
+    window.chiDuongDenDay = chiDuongDenDay;
+    window.layViTriGPS = layViTriGPS;
+    window.filterItems = filterItems;
+    window.timKiem = timKiem;
+    window.xoaTimKiem = xoaTimKiem;
+    window.setViewMode = setViewMode;
+    window.xoaItem = xoaItem;
+    window.xoaDanhSach = xoaDanhSach;
+    window.luuBanSao = luuBanSao;
+    window.batDauTramMoi = batDauTramMoi;
+    window.exportDanhSach = exportDanhSach;
+    window.toggleZaloPanel = toggleZaloPanel;
+    window.saoChepNoiDungZalo = saoChepNoiDungZalo;
+    window.chiaSeTextZalo = chiaSeTextZalo;
+    window.chiaSeExcelZalo = chiaSeExcelZalo;
+    window.moHuongDan = moHuongDan;
+    window.dongHuongDan = dongHuongDan;
+    window.luuTenTBA = luuTenTBA;
+  </script>
+</body>
+</html>
